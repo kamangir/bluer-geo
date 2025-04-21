@@ -1,50 +1,105 @@
-# 🌀 bluer-plugin
+# 🌐 bluer-geo (`@geo`)
 
-🌀 `@plugin` is a git template for a [`bluer-ai`](https://github.com/kamangir/bluer-ai) plugin, to build [things like these](https://github.com/kamangir?tab=repositories), that out-of-the-box support,
-
-- a [github repo](https://github.com/) with [actions](https://github.com/features/actions).
-- [pylint](https://pypi.org/project/pylint/).
-- [pytest](https://docs.pytest.org/).
-- a pip-installable python + bash package published to [pypi](https://pypi.org/).
-- a bash [command interface](./bluer_plugin/.abcli/bluer_plugin.sh).
-- [bash testing](./.github/workflows/bashtest.yml).
-- in-repo [compiled](https://github.com/kamangir/bluer-objects/tree/main/bluer_objects/README) READMEs. example: [template.md](https://github.com/kamangir/palisades/blob/main/palisades/docs/damage-analytics-template.md) -> [README.md](https://github.com/kamangir/palisades/blob/main/palisades/docs/damage-analytics.md).
-- [object management](https://github.com/kamangir/blue-objects) with cloud persistence with metadata tracking by [MLflow](https://mlflow.org/).
-
-## installation
+🌐 AI for a Blue Planet.
 
 ```bash
-pip install bluer-plugin
+pip install bluer-geo
 ```
 
-## creating a bluer-plugin
+```mermaid
+graph LR
+    catalog_browse["@catalog browse <catalog-name> <resource>"]
 
-1️⃣ create a new repository from [this template](https://github.com/kamangir/bluer-plugin),
+    catalog_get["@catalog get~~<thing> --catalog~~<catalog>"]
 
-2️⃣ complete `<repo-name>` and `<plugin-name>` and run,
+    catalog_list_catalogs["@catalog list~~catalogs"]
 
-```bash
-@git clone <repo-name> cd
+    catalog_list["@catalog list~~collections|datacube_classes --catalog~~<catalog>"]
 
-@plugins transform <repo-name>
+    catalog_query["@catalog query <catalog-name> <collection-name>~~- <query-object-name>"]
 
-# review and clean up the repo.
+    catalog_query_and_ingest["@catalog query <catalog-name> <collection-name> ingest,scope=<scope> <query-object-name>"]
 
-pip3 install -e .
+    catalog_query_read["@catalog query read~~- <query-object-name>"]
 
-@init
+    catalog_query_ingest["@catalog query ingest~~- <query-object-name> scope=<scope>"]
 
-@help @<plugin-name>
+    datacube_crop["@datacube crop~~- <object-name> <datacube-id>"]
+
+    datacube_get["@datacube get catalog <datacube-id>"]
+
+    datacube_ingest["@datacube ingest scope=<scope> <datacube-id>"]
+
+    datacube_label["@datacube label~~- <datacube-id>"]
+
+    datacube_list["@datacube list <datacube-id> --scope~~<scope>"]
+
+    geo_watch["@geo~~watch batch <query-object-name>|target=<target>~~- to=<runner>~~-~~- <object-name>"]
+
+    catalog["🌐 catalog"]:::folder
+    datacube_1["🧊 datacube"]:::folder
+    datacube_2["🧊 datacube"]:::folder
+    datacube_3["🧊 datacube"]:::folder
+    terminal["💻 terminal"]:::folder
+    QGIS["🖼️ QGIS"]:::folder
+    query_object["📂 query object"]:::folder
+    object["📂 object"]:::folder
+    target["🎯 target"]:::folder
+
+    catalog_list_catalogs --> terminal
+
+    catalog --> catalog_browse
+    catalog_browse --> terminal
+
+    catalog --> catalog_get
+    catalog_get --> terminal
+
+    catalog --> catalog_list
+    catalog_list --> terminal
+
+    catalog --> catalog_query
+    catalog_query --> query_object
+
+    catalog --> catalog_query_and_ingest
+    catalog_query_and_ingest --> query_object
+    catalog_query_and_ingest --> datacube_1
+
+    query_object --> catalog_query_read
+    catalog_query_read --> datacube_1
+
+    query_object --> catalog_query_ingest
+    catalog_query_ingest --> datacube_1
+    catalog_query_ingest --> datacube_2
+    catalog_query_ingest --> datacube_3
+
+    datacube_1 --> datacube_crop
+    target --> datacube_crop
+    datacube_crop --> datacube_1
+
+    datacube_1 --> datacube_get
+    datacube_get --> terminal
+
+    datacube_1 --> datacube_ingest
+    datacube_ingest --> datacube_1
+
+    datacube_1 --> datacube_list
+    datacube_list --> terminal
+
+    datacube_1 --> datacube_label
+    datacube_label --> QGIS
+    datacube_label --> datacube_1
+
+    query_object --> geo_watch
+    target --> geo_watch
+    geo_watch --> object
+
+    classDef folder fill:#999,stroke:#333,stroke-width:2px;
 ```
 
-## features
-
-items:::
+--table--
 
 ---
 
-> 🌀 [`blue-plugin`](https://github.com/kamangir/blue-plugin) for the [Global South](https://github.com/kamangir/bluer-south).
+> 🌀 [`blue-geo`](https://github.com/kamangir/blue-geo) for the [Global South](https://github.com/kamangir/bluer-south).
 
----
-
-signature:::
+--signature--
