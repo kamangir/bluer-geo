@@ -3,7 +3,7 @@ from typing import Tuple
 import numpy as np
 
 
-from bluer_objects import objects
+from bluer_objects import objects, storage
 
 from bluer_geo import env
 from bluer_geo.file.load import load_geoimage
@@ -38,12 +38,15 @@ def test_file_load_geoimage(
     expected_shape: Tuple[int],
 ) -> None:
     if expected_success:
-        assert objects.download(object_name, filename)
+        assert storage.download(
+            object_name=object_name,
+            filename=filename,
+        )
 
     success, image, metadata = load_geoimage(
         objects.path_of(
-            filename,
-            object_name,
+            object_name=object_name,
+            filename=filename,
         )
     )
     assert success == expected_success

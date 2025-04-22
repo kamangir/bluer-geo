@@ -3,7 +3,7 @@ from typing import Callable, Union, List
 
 from blueness import module
 from bluer_options import string
-from bluer_objects import file, objects
+from bluer_objects import file, objects, storage
 
 from bluer_geo.env import BLUE_GEO_TEST_OBJECT
 from bluer_geo import NAME
@@ -23,7 +23,7 @@ NAME = module.name(__file__, NAME)
 def test_object():
     object_name = BLUE_GEO_TEST_OBJECT
 
-    assert objects.download(object_name=object_name)
+    assert storage.download(object_name=object_name)
 
     yield object_name
 

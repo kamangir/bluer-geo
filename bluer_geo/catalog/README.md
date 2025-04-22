@@ -12,7 +12,6 @@ to add a new catalog follow [these instructions](../doc/adding-catalogs-and-data
 - [EarthSearch](./EarthSearch/)
 - [firms](./firms/)
 - [Maxar Open Data](./maxar_open_data/)
-- [SkyFox](./SkyFox/)
 - [ukraine_timemap](./ukraine_timemap/)
 
 ## listing catalogs

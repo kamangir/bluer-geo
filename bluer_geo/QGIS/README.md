@@ -2,12 +2,9 @@
 
 🌐 an AI terraform for [QGIS](https://www.qgis.org/).
 
-```bash
-pip install blue-geo
-```
 
 ```bash
-QGIS help
+@help QGIS
 ```
 ```bash
 QGIS \

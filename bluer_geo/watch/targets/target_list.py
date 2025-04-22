@@ -3,7 +3,7 @@ import geopandas as gpd
 from functools import reduce
 from tqdm import tqdm
 
-from bluer_objects import file, objects
+from bluer_objects import file, objects, storage
 
 from bluer_geo.env import BLUE_GEO_WATCH_TARGET_LIST
 from bluer_geo.file.save import save_geojson
@@ -33,7 +33,7 @@ class TargetList:
             }
 
     def download(self) -> bool:
-        return objects.download(
+        return storage.download(
             object_name=self.object_name,
             filename="metadata.yaml",
         )
@@ -41,8 +41,8 @@ class TargetList:
     @classmethod
     def filename(cls) -> str:
         return objects.path_of(
-            filename="metadata.yaml",
             object_name=cls.object_name,
+            filename="metadata.yaml",
         )
 
     def get(
