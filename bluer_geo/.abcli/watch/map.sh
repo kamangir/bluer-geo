@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function blue_geo_watch_map() {
+function bluer_geo_watch_map() {
     local options=$1
 
     local algo=$(abcli_option "$options" algo modality)
@@ -15,7 +15,7 @@ function blue_geo_watch_map() {
     abcli_log "🌐 @geo watch map $query_object_name: $options -> @algo"
 
     abcli_eval - \
-        blue_geo_watch_algo_${algo}_map "$@"
+        bluer_geo_watch_algo_${algo}_map "$@"
     local status="$?"
 
     if [[ "$status" -ne 0 ]]; then

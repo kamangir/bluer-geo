@@ -3,10 +3,10 @@ import copy
 import geopandas as gpd
 from shapely.geometry import Polygon
 
-from blue_objects import file, objects
+from bluer_objects import file, objects
 
-from blue_geo.file.save import save_geojson
-from blue_geo.logger import logger
+from bluer_geo.file.save import save_geojson
+from bluer_geo.logger import logger
 
 
 class Target:

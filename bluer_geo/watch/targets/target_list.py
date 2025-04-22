@@ -3,12 +3,12 @@ import geopandas as gpd
 from functools import reduce
 from tqdm import tqdm
 
-from blue_objects import file, objects
+from bluer_objects import file, objects
 
-from blue_geo.env import BLUE_GEO_WATCH_TARGET_LIST
-from blue_geo.file.save import save_geojson
-from blue_geo.watch.targets.target import Target
-from blue_geo.logger import logger
+from bluer_geo.env import BLUE_GEO_WATCH_TARGET_LIST
+from bluer_geo.file.save import save_geojson
+from bluer_geo.watch.targets.target import Target
+from bluer_geo.logger import logger
 
 
 class TargetList:

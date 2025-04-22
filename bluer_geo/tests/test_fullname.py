@@ -1,4 +1,4 @@
-from blue_geo import fullname
+from bluer_geo import fullname
 
 
 def test_fullname():

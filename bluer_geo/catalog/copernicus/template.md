@@ -13,7 +13,7 @@ the `copernicus` catalog covers [Copernicus Data Space Ecosystem - Europe's eyes
 ```bash
 @catalog query copernicus help
 ```
---help-- blue_geo catalog query copernicus sentinel_2
+help::: bluer_geo catalog query copernicus sentinel_2
 
 --include-- ../../watch/targets/md/chilcotin-river-landslide.md case study: Chilcotin River Landslide
 

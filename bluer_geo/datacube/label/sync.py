@@ -2,10 +2,10 @@ from blueness import module
 import glob
 from tqdm import tqdm
 
-from blue_objects import objects, file
+from bluer_objects import objects, file
 
-from blue_geo import NAME
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 
@@ -32,7 +32,7 @@ def sync_the_label(
         logger.error(f"template not found: {template_filename}.")
         return False
 
-    from blue_objects.storage import instance as storage
+    from bluer_objects.storage import instance as storage
 
     if storage.exists(object_name=f"{datacube_id}/label.shp"):
         logger.info(f"☁️ {label_filename}")

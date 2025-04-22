@@ -2,12 +2,12 @@ import argparse
 
 from blueness import module
 from blueness.argparse.generic import sys_exit
-from blue_objects.env import ABCLI_OBJECT_ROOT
+from bluer_objects.env import ABCLI_OBJECT_ROOT
 
-from blue_geo import NAME
-from blue_geo.QGIS.seed import generate_seed, default_init_script
-from blue_geo.QGIS.dependency import list_of_dependencies
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.QGIS.seed import generate_seed, default_init_script
+from bluer_geo.QGIS.dependency import list_of_dependencies
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

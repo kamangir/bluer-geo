@@ -1,8 +1,8 @@
 from typing import List
 
-from blue_options.terminal import show_usage
+from bluer_options.terminal import show_usage
 
-from blue_geo.help.datacube.ingest import scope_details
+from bluer_geo.help.datacube.ingest import scope_details
 
 
 def help_list(

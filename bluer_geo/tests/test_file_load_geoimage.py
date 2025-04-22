@@ -3,10 +3,10 @@ from typing import Tuple
 import numpy as np
 
 
-from blue_objects import objects
+from bluer_objects import objects
 
-from blue_geo import env
-from blue_geo.file.load import load_geoimage
+from bluer_geo import env
+from bluer_geo.file.load import load_geoimage
 
 
 @pytest.mark.parametrize(

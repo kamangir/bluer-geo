@@ -1,8 +1,8 @@
 from typing import List
 
-from blue_options.terminal import show_usage, xtra
+from bluer_options.terminal import show_usage, xtra
 
-from blue_geo.objects import special_objects
+from bluer_geo.objects import special_objects
 
 
 def help_ingest(

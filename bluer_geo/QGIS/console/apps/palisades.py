@@ -41,7 +41,7 @@ class BLUE_GEO_QGIS_APPLICATION_PALISADES(BLUE_GEO_QGIS_APPLICATION):
         if not Q_file_exists(filename):
             Q_seed(
                 [
-                    "blue_geo_datacube_ingest",
+                    "bluer_geo_datacube_ingest",
                     "scope=rgb",
                     datacube_id,
                 ]

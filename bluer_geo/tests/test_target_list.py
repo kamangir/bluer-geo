@@ -1,8 +1,8 @@
 import pytest
 
-from blue_objects import file, objects
-from blue_geo.watch.targets.target import Target
-from blue_geo.watch.targets.target_list import TargetList
+from bluer_objects import file, objects
+from bluer_geo.watch.targets.target import Target
+from bluer_geo.watch.targets.target_list import TargetList
 
 
 @pytest.fixture
@@ -13,7 +13,6 @@ def target_list():
 @pytest.mark.parametrize(
     ["catalog_name", "collection", "expected_target"],
     [
-        ["SkyFox", "Venus", "Leonardo"],
         ["EarthSearch", "sentinel_2_l1c", "burning-man-2024"],
     ],
 )

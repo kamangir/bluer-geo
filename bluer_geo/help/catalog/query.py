@@ -1,14 +1,14 @@
 from typing import List
 
-from blue_options.terminal import show_usage, xtra
+from bluer_options.terminal import show_usage, xtra
 
-from blue_geo.help.datacube.ingest import ingest_options
-from blue_geo.catalog.functions import get_datacube_class_in_catalog
-from blue_geo.catalog.default import as_list_of_args
-from blue_geo.catalog.classes import list_of_catalogs
-from blue_geo.catalog.functions import get_list_of_datacube_classes
-from blue_geo.help.datacube import ingest_options as datacube_ingest_options
-from blue_geo.help.datacube import scope_details
+from bluer_geo.help.datacube.ingest import ingest_options
+from bluer_geo.catalog.functions import get_datacube_class_in_catalog
+from bluer_geo.catalog.default import as_list_of_args
+from bluer_geo.catalog.classes import list_of_catalogs
+from bluer_geo.catalog.functions import get_list_of_datacube_classes
+from bluer_geo.help.datacube import ingest_options as datacube_ingest_options
+from bluer_geo.help.datacube import scope_details
 
 
 def help_query(

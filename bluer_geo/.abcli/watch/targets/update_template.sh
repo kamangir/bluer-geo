@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function blue_geo_watch_targets_update_template() {
+function bluer_geo_watch_targets_update_template() {
     local options=$1
     local target_name=$(abcli_option "$options" target chilcotin-river-landslide-test)
     local do_download=$(abcli_option "$options" download 1)
@@ -11,7 +11,7 @@ function blue_geo_watch_targets_update_template() {
 
     local object_name=$(abcli_clarify_object $2 .)
 
-    python3 -m blue_geo.watch.targets save \
+    python3 -m bluer_geo.watch.targets save \
         --target_name $target_name \
         --object_name $BLUE_GEO_QGIS_TEMPLATE_WATCH \
         "${@:3}"

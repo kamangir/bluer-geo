@@ -6,7 +6,7 @@
 ```bash
 @help QGIS
 ```
---help-- blue_geo QGIS
+help::: bluer_geo QGIS
 
 to terraform QGIS, generate the seed 🌱 ,
 

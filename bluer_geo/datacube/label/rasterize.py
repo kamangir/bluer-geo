@@ -5,14 +5,14 @@ from rasterio.features import rasterize
 from tqdm import tqdm
 
 from blueness import module
-from blue_objects import objects, file
-from blue_objects.metadata import post_to_object
+from bluer_objects import objects, file
+from bluer_objects.metadata import post_to_object
 
-from blue_geo import NAME
-from blue_geo.file.load import load_geodataframe
-from blue_geo.catalog import get_datacube
-from blue_geo.catalog.generic.generic.scope import DatacubeScope
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.file.load import load_geodataframe
+from bluer_geo.catalog import get_datacube
+from bluer_geo.catalog.generic.generic.scope import DatacubeScope
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

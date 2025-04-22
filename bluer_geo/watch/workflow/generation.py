@@ -1,13 +1,13 @@
 from typing import List
 
 from blueness import module
-from blue_options import string
-from blue_objects.metadata import get_from_object
-from blueflow.workflow.generic import Workflow
+from bluer_options import string
+from bluer_objects.metadata import get_from_object
+from bluer_flow.workflow.generic import Workflow
 
-from blue_geo import NAME
-from blue_geo.watch.targets.target import Target
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.watch.targets.target import Target
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 
@@ -47,7 +47,7 @@ def generate_workflow(
 
     workflow = Workflow(
         job_name,
-        name="blue_geo.watch",
+        name="bluer_geo.watch",
         args={
             "algo_options": algo_options,
             "query_object_name": query_object_name,
@@ -64,7 +64,7 @@ def generate_workflow(
             "blueflow_workflow monitor",
             "node=reduce",
             job_name,
-            "blue_geo_watch_reduce",
+            "bluer_geo_watch_reduce",
             f",{algo_options},suffix={suffix},{reduce_options}",
             query_object_name,
             object_name,
@@ -84,7 +84,7 @@ def generate_workflow(
                 "blueflow_workflow monitor",
                 f"node={node}",
                 job_name,
-                "blue_geo_watch_map",
+                "bluer_geo_watch_map",
                 f",{algo_options},offset={offset:03d},suffix={suffix},{map_options}",
                 query_object_name,
             ]

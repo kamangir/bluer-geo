@@ -1,9 +1,12 @@
 import pytest
 
-from blue_objects.objects import unique_object
+from bluer_objects.objects import unique_object
 
-from blue_geo.tests import assets
-from blue_geo.catalog.maxar_open_data import MaxarOpenDataCatalog, MaxarOpenDataDatacube
+from bluer_geo.tests import assets
+from bluer_geo.catalog.maxar_open_data import (
+    MaxarOpenDataCatalog,
+    MaxarOpenDataDatacube,
+)
 
 
 def test_get_list_of_collections():

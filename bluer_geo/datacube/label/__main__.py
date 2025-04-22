@@ -3,10 +3,10 @@ import argparse
 from blueness import module
 from blueness.argparse.generic import sys_exit
 
-from blue_geo import NAME
-from blue_geo.datacube.label.rasterize import rasterize_the_label
-from blue_geo.datacube.label.sync import sync_the_label
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.datacube.label.rasterize import rasterize_the_label
+from bluer_geo.datacube.label.sync import sync_the_label
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

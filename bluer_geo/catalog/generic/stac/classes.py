@@ -1,8 +1,8 @@
 from typing import List, Tuple, Union
 from pystac_client import Client
 
-from blue_geo.catalog.generic.classes import GenericCatalog
-from blue_geo.logger import logger
+from bluer_geo.catalog.generic.classes import GenericCatalog
+from bluer_geo.logger import logger
 
 
 class STACCatalog(GenericCatalog):

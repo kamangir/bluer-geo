@@ -9,7 +9,7 @@ The `maxar_open_data` catalog covers [Maxar's Open Data program](https://www.max
 ```bash
 @catalog query maxar_open_data help
 ```
---help-- blue_geo catalog query maxar_open_data
+help::: bluer_geo catalog query maxar_open_data
 
 ## example use
 

@@ -1,12 +1,12 @@
 import argparse
 
 from blueness import module
-from blue_objects import objects
+from bluer_objects import objects
 from blueness.argparse.generic import sys_exit
 
-from blue_geo import NAME
-from blue_geo.logger.geoimage import log_geoimage
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.logger.geoimage import log_geoimage
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

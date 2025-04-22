@@ -4,9 +4,9 @@ from types import ModuleType
 from blueness import module
 from blueness.argparse.generic import sys_exit
 
-from blue_geo import NAME
-from blue_geo.objects import special_objects
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.objects import special_objects
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

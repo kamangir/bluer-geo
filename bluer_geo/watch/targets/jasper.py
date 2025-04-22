@@ -1,5 +1,5 @@
 from typing import List, Dict
-from blue_objects.env import ABCLI_PUBLIC_PREFIX
+from bluer_objects.env import ABCLI_PUBLIC_PREFIX
 
 list_of_dates: List[str] = [
     "2024_7_20",

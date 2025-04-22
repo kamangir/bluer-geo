@@ -3,12 +3,12 @@ import argparse
 from blueness import module
 from blueness.argparse.generic import sys_exit
 
-from blue_geo import NAME
-from blue_geo.catalog.default import add_default_arguments
-from blue_geo.catalog import get_datacube_class_in_catalog
-from blue_geo.catalog.generic.generic.stac import STACDatacube
-from blue_geo.catalog.copernicus.sentinel_2.classes import CopernicusSentinel2Datacube
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.catalog.default import add_default_arguments
+from bluer_geo.catalog import get_datacube_class_in_catalog
+from bluer_geo.catalog.generic.generic.stac import STACDatacube
+from bluer_geo.catalog.copernicus.sentinel_2.classes import CopernicusSentinel2Datacube
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

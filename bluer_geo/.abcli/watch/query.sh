@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function blue_geo_watch_query() {
+function bluer_geo_watch_query() {
     local options=$1
     local do_dryrun=$(abcli_option_int "$options" dryrun 0)
     local do_upload=$(abcli_option_int "$options" upload $(abcli_not $do_dryrun))
@@ -11,7 +11,7 @@ function blue_geo_watch_query() {
         return 1
     fi
 
-    local target_exists=$(blue_geo_watch_targets get \
+    local target_exists=$(bluer_geo_watch_targets get \
         --what exists \
         --target_name $target \
         --log 0)
@@ -20,15 +20,15 @@ function blue_geo_watch_query() {
         return 1
     fi
 
-    local catalog=$(blue_geo_watch_targets get \
+    local catalog=$(bluer_geo_watch_targets get \
         --what catalog \
         --target_name $target \
         --log 0)
-    local collection=$(blue_geo_watch_targets get \
+    local collection=$(bluer_geo_watch_targets get \
         --what collection \
         --target_name $target \
         --log 0)
-    local query_args=$(blue_geo_watch_targets get \
+    local query_args=$(bluer_geo_watch_targets get \
         --what query_args \
         --target_name $target \
         --delim space \
@@ -39,7 +39,7 @@ function blue_geo_watch_query() {
     abcli_log "🎯 $target: $catalog/$collection: $query_args -> $object_name"
 
     abcli_eval dryrun=$do_dryrun \
-        blue_geo_catalog_query $catalog \
+        bluer_geo_catalog_query $catalog \
         $collection \
         - \
         $object_name \
@@ -47,7 +47,7 @@ function blue_geo_watch_query() {
         $query_args
     [[ $? -ne 0 ]] && return 1
 
-    blue_geo_watch_targets_save \
+    bluer_geo_watch_targets_save \
         target=$target \
         $object_name
     [[ $? -ne 0 ]] && return 1

@@ -6,17 +6,17 @@ import geopandas as gpd
 from geojson import Point
 
 from blueness import module
-from blue_options import string
-from blue_objects import file, objects
-from blue_objects.metadata import post_to_object
+from bluer_options import string
+from bluer_objects import file, objects
+from bluer_objects.metadata import post_to_object
 
-from blue_geo import NAME, env, fullname
-from blue_geo.catalog.generic import GenericDatacube
-from blue_geo.catalog.ukraine_timemap.classes import UkraineTimemapCatalog
-from blue_geo.catalog.generic.generic.scope import DatacubeScope
-from blue_geo.host import signature
-from blue_geo.file.save import save_geojson
-from blue_geo.logger import logger
+from bluer_geo import NAME, env, fullname
+from bluer_geo.catalog.generic import GenericDatacube
+from bluer_geo.catalog.ukraine_timemap.classes import UkraineTimemapCatalog
+from bluer_geo.catalog.generic.generic.scope import DatacubeScope
+from bluer_geo.host import signature
+from bluer_geo.file.save import save_geojson
+from bluer_geo.logger import logger
 
 API_URL = "https://bellingcat-embeds.ams3.cdn.digitaloceanspaces.com/production/ukr/timemap/api.json"
 

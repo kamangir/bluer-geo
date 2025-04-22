@@ -1,6 +1,6 @@
 from typing import Type, Union, List
-from blue_geo.catalog.classes import list_of_catalog_classes, list_of_datacube_classes
-from blue_geo.catalog.generic import (
+from bluer_geo.catalog.classes import list_of_catalog_classes, list_of_datacube_classes
+from bluer_geo.catalog.generic import (
     GenericCatalog,
     VoidCatalog,
     GenericDatacube,

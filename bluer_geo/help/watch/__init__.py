@@ -1,14 +1,14 @@
 from typing import List
 
-from blue_options.terminal import show_usage, xtra
-from blueflow.workflow.runners import list_of_runners
-from blueflow.help.workflow import submit_options as workflow_submit_options
-from blueflow.help.workflow import runner_details
+from bluer_options.terminal import show_usage, xtra
+from bluer_flow.workflow.runners import list_of_runners
+from bluer_flow.help.workflow import submit_options as workflow_submit_options
+from bluer_flow.help.workflow import runner_details
 
-from blue_geo.datacube.modalities import options as modality_options
-from blue_geo.watch.targets.target_list import TargetList
-from blue_geo.watch.algo import list_of_algo
-from blue_geo.help.watch.targets import help_functions as help_targets
+from bluer_geo.datacube.modalities import options as modality_options
+from bluer_geo.watch.targets.target_list import TargetList
+from bluer_geo.watch.algo import list_of_algo
+from bluer_geo.help.watch.targets import help_functions as help_targets
 
 
 def help_(

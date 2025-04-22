@@ -1,18 +1,18 @@
 #! /usr/bin/env bash
 
-function test_blue_geo_watch_targets_cat() {
+function test_bluer_geo_watch_targets_cat() {
     abcli_download - $BLUE_GEO_WATCH_TARGET_LIST
 
-    blue_geo_watch_targets cat \
+    bluer_geo_watch_targets cat \
         chilcotin-river-landslide-test
 }
 
-function test_blue_geo_watch_targets_download() {
-    blue_geo_watch_targets_download
+function test_bluer_geo_watch_targets_download() {
+    bluer_geo_watch_targets_download
 }
 
-function test_blue_geo_watch_targets_test() {
+function test_bluer_geo_watch_targets_test() {
     abcli_download - $BLUE_GEO_WATCH_TARGET_LIST
 
-    blue_geo_watch_targets test
+    bluer_geo_watch_targets test
 }

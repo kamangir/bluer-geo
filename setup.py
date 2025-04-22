@@ -16,8 +16,6 @@ setup(
         f"{NAME}.catalog.copernicus.sentinel_2",
         f"{NAME}.catalog.EarthSearch",
         f"{NAME}.catalog.EarthSearch.sentinel_2_l1c",
-        f"{NAME}.catalog.SkyFox",
-        f"{NAME}.catalog.SkyFox.Venus",
         f"{NAME}.catalog.firms",
         f"{NAME}.catalog.firms.area",
         f"{NAME}.catalog.generic",

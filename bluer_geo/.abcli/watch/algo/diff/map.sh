@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function blue_geo_watch_algo_diff_map() {
+function bluer_geo_watch_algo_diff_map() {
     local options=$1
     local algo=$(abcli_option "$options" algo diff)
     local do_dryrun=$(abcli_option_int "$options" dryrun 0)
@@ -18,7 +18,7 @@ function blue_geo_watch_algo_diff_map() {
     local index_000
     for ((index = offset_int; index < offset_int + depth; index++)); do
         index_000=$(python3 -c "print(f'{$index:03d}')")
-        blue_geo_watch_algo_modality_map \
+        bluer_geo_watch_algo_modality_map \
             ,$options,algo=modality,offset=$index_000,suffix=$suffix-$offset-D,~upload \
             "${@:2}"
         [[ $? -ne 0 ]] && return 1
@@ -26,12 +26,12 @@ function blue_geo_watch_algo_diff_map() {
 
     local object_name=$query_object_name-$suffix-$offset
 
-    blue_geo_watch_targets copy - \
+    bluer_geo_watch_targets copy - \
         $query_object_name \
         $object_name
 
     abcli_eval dryrun=$do_dryrun \
-        python3 -m blue_geo.watch.algo.$algo \
+        python3 -m bluer_geo.watch.algo.$algo \
         map \
         --query_object_name $query_object_name \
         --suffix $suffix \

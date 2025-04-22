@@ -1,10 +1,10 @@
 import pytest
 
-from blue_objects import objects
-from blue_objects.env import ABCLI_OBJECT_ROOT
+from bluer_objects import objects
+from bluer_objects.env import ABCLI_OBJECT_ROOT
 
-from blue_geo.env import BLUE_GEO_WATCH_TARGET_LIST
-from blue_geo.QGIS.dependency import list_of_dependencies
+from bluer_geo.env import BLUE_GEO_WATCH_TARGET_LIST
+from bluer_geo.QGIS.dependency import list_of_dependencies
 
 
 @pytest.mark.parametrize(

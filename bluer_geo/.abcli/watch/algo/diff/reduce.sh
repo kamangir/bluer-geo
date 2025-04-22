@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function blue_geo_watch_algo_diff_reduce() {
+function bluer_geo_watch_algo_diff_reduce() {
     local options=$1
     local algo=$(abcli_option "$options" algo diff)
     local content_threshold=$(abcli_option "$options" content 0.5)
@@ -14,7 +14,7 @@ function blue_geo_watch_algo_diff_reduce() {
     abcli_log "@geo: watch: algo: $algo: reduce"
 
     abcli_eval dryrun=$do_dryrun \
-        python3 -m blue_geo.watch.algo.$algo \
+        python3 -m bluer_geo.watch.algo.$algo \
         reduce \
         --content_threshold $content_threshold \
         --query_object_name $query_object_name \

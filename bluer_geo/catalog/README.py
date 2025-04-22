@@ -1,11 +1,11 @@
 import os
 
-from blue_objects import file, README
-from blue_options.help.functions import get_help
+from bluer_objects import file, README
+from bluer_options.help.functions import get_help
 
-from blue_geo import NAME, VERSION, ICON, REPO_NAME
-from blue_geo.catalog import get_catalog
-from blue_geo.help.functions import help_functions
+from bluer_geo import NAME, VERSION, ICON, REPO_NAME
+from bluer_geo.catalog import get_catalog
+from bluer_geo.help.functions import help_functions
 
 
 def build() -> bool:
@@ -31,7 +31,6 @@ def build() -> bool:
                 "copernicus",
                 "EarthSearch",
                 "maxar_open_data",
-                "SkyFox",
                 "firms",
                 "ukraine_timemap",
             ]

@@ -3,10 +3,10 @@ import rasterio
 import geopandas as gpd
 
 from blueness import module
-from blue_options import string
-from blue_objects.file.save import prepare_for_saving, finish_saving
+from bluer_options import string
+from bluer_objects.file.save import prepare_for_saving, finish_saving
 
-from blue_geo import NAME
+from bluer_geo import NAME
 
 NAME = module.name(__file__, NAME)
 

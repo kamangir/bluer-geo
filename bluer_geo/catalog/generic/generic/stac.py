@@ -2,12 +2,12 @@ from typing import Tuple, Any, Dict, List
 from datetime import datetime, timedelta
 from tqdm import tqdm
 
-from blue_objects.metadata import post_to_object
+from bluer_objects.metadata import post_to_object
 
-from blue_geo.catalog.generic.generic.classes import GenericDatacube
-from blue_geo.catalog.generic.generic.scope import DatacubeScope
-from blue_geo.catalog.generic.stac.classes import STACCatalog
-from blue_geo.logger import logger
+from bluer_geo.catalog.generic.generic.classes import GenericDatacube
+from bluer_geo.catalog.generic.generic.scope import DatacubeScope
+from bluer_geo.catalog.generic.stac.classes import STACCatalog
+from bluer_geo.logger import logger
 
 
 class STACDatacube(GenericDatacube):

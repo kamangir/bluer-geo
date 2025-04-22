@@ -4,10 +4,10 @@ import datetime
 from blueness import module
 from blueness.argparse.generic import sys_exit
 
-from blue_geo import NAME
-from blue_geo.catalog.default import add_default_arguments
-from blue_geo.catalog.maxar_open_data.collection import MaxarOpenDataDatacube
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.catalog.default import add_default_arguments
+from bluer_geo.catalog.maxar_open_data.collection import MaxarOpenDataDatacube
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

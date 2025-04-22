@@ -1,10 +1,10 @@
 from typing import List
 
-from blue_options.terminal import show_usage, xtra
+from bluer_options.terminal import show_usage, xtra
 
-from blue_geo.help.QGIS.expressions import help_functions as help_expressions
-from blue_geo.help.QGIS.templates import help_functions as help_templates
-from blue_geo.QGIS.seed import default_init_script
+from bluer_geo.help.QGIS.expressions import help_functions as help_expressions
+from bluer_geo.help.QGIS.templates import help_functions as help_templates
+from bluer_geo.QGIS.seed import default_init_script
 
 
 def help_download(

@@ -77,7 +77,7 @@ function test_@geo_help() {
         "QGIS templates upload" \
         "QGIS upload" \
         \
-        "blue_geo"; do
+        "bluer_geo"; do
         abcli_eval ,$options \
             abcli_help $module
         [[ $? -ne 0 ]] && return 1

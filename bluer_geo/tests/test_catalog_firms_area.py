@@ -1,8 +1,8 @@
 import pytest
 import geopandas as gpd
-from blue_geo.tests import assets
-from blue_geo.catalog.firms import FirmsCatalog
-from blue_geo.catalog.firms.area import enums, FirmsAreaDatacube
+from bluer_geo.tests import assets
+from bluer_geo.catalog.firms import FirmsCatalog
+from bluer_geo.catalog.firms.area import enums, FirmsAreaDatacube
 
 
 @pytest.mark.parametrize(

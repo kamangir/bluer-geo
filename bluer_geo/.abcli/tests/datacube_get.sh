@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function test_blue_geo_datacube_get_catalog() {
+function test_bluer_geo_datacube_get_catalog() {
     local test_asset
     local datacube_id
     local expected_catalog
@@ -17,7 +17,7 @@ function test_blue_geo_datacube_get_catalog() {
         expected_catalog=$(python3 -c "print('$test_asset'.split(':',1)[1])")
 
         abcli_assert \
-            $(blue_geo_datacube_get catalog $datacube_id) \
+            $(bluer_geo_datacube_get catalog $datacube_id) \
             $expected_catalog
         [[ $? -ne 0 ]] && return 1
     done
@@ -25,7 +25,7 @@ function test_blue_geo_datacube_get_catalog() {
     return 0
 }
 
-function test_blue_geo_datacube_get_raw() {
+function test_bluer_geo_datacube_get_raw() {
     local datacube_id
     for datacube_id in \
         $BLUE_GEO_TEST_DATACUBE_COPERNICUS_SENTINEL_2 \
@@ -35,13 +35,13 @@ function test_blue_geo_datacube_get_raw() {
         $BLUE_GEO_TEST_DATACUBE_UKRAINE_TIMEMAP; do
 
         # raw contains special characters; hard to test.
-        blue_geo_datacube_get raw $datacube_id
+        bluer_geo_datacube_get raw $datacube_id
     done
 
     return 0
 }
 
-function test_blue_geo_datacube_get_template() {
+function test_bluer_geo_datacube_get_template() {
     local test_asset
     local datacube_id
     local expected_template
@@ -59,7 +59,7 @@ function test_blue_geo_datacube_get_template() {
         expected_template=$(python3 -c "print('$test_asset'.split(':',1)[1])")
 
         abcli_assert \
-            $(blue_geo_datacube_get template $datacube_id) \
+            $(bluer_geo_datacube_get template $datacube_id) \
             $expected_template
         [[ $? -ne 0 ]] && return 1
     done

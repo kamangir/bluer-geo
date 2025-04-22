@@ -1,10 +1,10 @@
 from typing import List
 
-from blue_options.terminal import show_usage
+from bluer_options.terminal import show_usage
 
-from blue_geo.catalog import get_catalog
+from bluer_geo.catalog import get_catalog
 
-from blue_geo.catalog.classes import list_of_catalogs
+from bluer_geo.catalog.classes import list_of_catalogs
 
 
 def help_browse(

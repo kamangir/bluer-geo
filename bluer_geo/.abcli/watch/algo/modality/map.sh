@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function blue_geo_watch_algo_modality_map() {
+function bluer_geo_watch_algo_modality_map() {
     local options=$1
     local algo=$(abcli_option "$options" algo modality)
     local do_dryrun=$(abcli_option_int "$options" dryrun 0)
@@ -11,7 +11,7 @@ function blue_geo_watch_algo_modality_map() {
 
     local query_object_name=$2
 
-    local datacube_id=$(blue_geo_catalog_query_read - \
+    local datacube_id=$(bluer_geo_catalog_query_read - \
         $query_object_name \
         --count 1 \
         --offset $offset)
@@ -33,19 +33,19 @@ function blue_geo_watch_algo_modality_map() {
         local scope="rgbx"
         [[ ! -z "$product" ]] && scope=$scope+_${product}_
 
-        blue_geo_datacube_ingest \
+        bluer_geo_datacube_ingest \
             dryrun=$do_dryrun,scope=$scope \
             $datacube_id
     fi
 
     local object_name=$query_object_name-$suffix-$offset
 
-    blue_geo_watch_targets copy - \
+    bluer_geo_watch_targets copy - \
         $query_object_name \
         $object_name
 
     local crop_suffix=$(abcli_string_timestamp_short)
-    blue_geo_datacube_crop \
+    bluer_geo_datacube_crop \
         dryrun=$do_dryrun,suffix=$crop_suffix \
         $object_name \
         $datacube_id
@@ -53,7 +53,7 @@ function blue_geo_watch_algo_modality_map() {
 
     local cropped_datacube_id=$datacube_id-DERIVED-crop-$crop_suffix
 
-    blue_geo_datacube_generate \
+    bluer_geo_datacube_generate \
         dryrun=$do_dryrun \
         $cropped_datacube_id \
         --modality $modality
@@ -61,7 +61,7 @@ function blue_geo_watch_algo_modality_map() {
 
     local scope="rgb"
     [[ ! -z "$product" ]] && scope=$scope+_${product}_
-    local filename=$(blue_geo_datacube_list $cropped_datacube_id \
+    local filename=$(bluer_geo_datacube_list $cropped_datacube_id \
         --scope $scope \
         --log 0 \
         --count 1 \
@@ -79,7 +79,7 @@ function blue_geo_watch_algo_modality_map() {
         $ABCLI_OBJECT_ROOT/$object_name/
 
     abcli_eval dryrun=$do_dryrun \
-        python3 -m blue_geo.watch.algo.$algo \
+        python3 -m bluer_geo.watch.algo.$algo \
         map \
         --query_object_name $query_object_name \
         --suffix $suffix \

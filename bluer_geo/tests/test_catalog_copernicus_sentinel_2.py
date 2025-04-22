@@ -1,10 +1,10 @@
 import pytest
 
-from blue_objects.objects import unique_object
+from bluer_objects.objects import unique_object
 
-from blue_geo.tests import assets
-from blue_geo.catalog.copernicus import CopernicusCatalog
-from blue_geo.catalog.copernicus.sentinel_2 import CopernicusSentinel2Datacube
+from bluer_geo.tests import assets
+from bluer_geo.catalog.copernicus import CopernicusCatalog
+from bluer_geo.catalog.copernicus.sentinel_2 import CopernicusSentinel2Datacube
 
 
 def test_get_list_of_collections():

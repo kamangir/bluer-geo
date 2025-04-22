@@ -1,10 +1,10 @@
 import pytest
 from shapely.geometry import Polygon
 
-from blue_objects import file, objects
+from bluer_objects import file, objects
 
-from blue_geo.tests.test_target_list import target_list
-from blue_geo.watch.targets import TargetList, Target
+from bluer_geo.tests.test_target_list import target_list
+from bluer_geo.watch.targets import TargetList, Target
 
 
 @pytest.mark.parametrize(

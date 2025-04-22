@@ -1,19 +1,19 @@
 #! /usr/bin/env bash
 
-function test_blue_geo_watch_targets_list() {
+function test_bluer_geo_watch_targets_list() {
     abcli_download - $BLUE_GEO_WATCH_TARGET_LIST
 
     abcli_assert \
-        $(blue_geo_watch_targets list \
+        $(bluer_geo_watch_targets list \
             --delim + \
             --log 0) \
         - non-empty
     [[ $? -ne 0 ]] && return 1
 
     abcli_assert \
-        $(blue_geo_watch_targets list \
-            --catalog_name SkyFox \
-            --collection Venus \
+        $(bluer_geo_watch_targets list \
+            --catalog_name EarthSearch \
+            --collection sentinel_2_l1c \
             --delim + \
             --log 0) \
         - non-empty

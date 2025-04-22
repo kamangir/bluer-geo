@@ -1,27 +1,27 @@
 from typing import List, Dict
 import os
 
-from blue_options import string
-from blue_objects import file
-from blue_geo.watch.targets.target_list import TargetList
-from blue_geo.watch.targets.bellingcat_2024_09_27_nagorno_karabakh import (
+from bluer_options import string
+from bluer_objects import file
+from bluer_geo.watch.targets.target_list import TargetList
+from bluer_geo.watch.targets.bellingcat_2024_09_27_nagorno_karabakh import (
     README as bellingcat_2024_09_27_nagorno_karabakh,
 )
-from blue_geo.watch.targets.burning_man_2024 import README as burning_man_2024
-from blue_geo.watch.targets.Cache_Creek import README as Cache_Creek
-from blue_geo.watch.targets.chilcotin_river_landslide import (
+from bluer_geo.watch.targets.burning_man_2024 import README as burning_man_2024
+from bluer_geo.watch.targets.Cache_Creek import README as Cache_Creek
+from bluer_geo.watch.targets.chilcotin_river_landslide import (
     README as chilcotin_river_landslide,
 )
-from blue_geo.watch.targets.DrugSuperLab import README as DrugSuperLab
-from blue_geo.watch.targets.elkhema import README as elkhema
-from blue_geo.watch.targets.jasper import README as jasper
-from blue_geo.watch.targets.Fagradalsfjall import README as Fagradalsfjall
-from blue_geo.watch.targets.Leonardo import README as Leonardo
-from blue_geo.watch.targets.Mount_Etna import README as Mount_Etna
-from blue_geo.watch.targets.Palisades import README as Palisades
-from blue_geo.watch.targets.Sheerness import README as Sheerness
-from blue_geo.watch.targets.Silver_Peak import README as Silver_Peak
-from blue_objects.env import ABCLI_PUBLIC_PREFIX
+from bluer_geo.watch.targets.DrugSuperLab import README as DrugSuperLab
+from bluer_geo.watch.targets.elkhema import README as elkhema
+from bluer_geo.watch.targets.jasper import README as jasper
+from bluer_geo.watch.targets.Fagradalsfjall import README as Fagradalsfjall
+from bluer_geo.watch.targets.Leonardo import README as Leonardo
+from bluer_geo.watch.targets.Mount_Etna import README as Mount_Etna
+from bluer_geo.watch.targets.Palisades import README as Palisades
+from bluer_geo.watch.targets.Sheerness import README as Sheerness
+from bluer_geo.watch.targets.Silver_Peak import README as Silver_Peak
+from bluer_objects.env import ABCLI_PUBLIC_PREFIX
 
 
 list_of_targets = {

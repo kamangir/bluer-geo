@@ -5,11 +5,11 @@ import rasterio
 import geojson
 
 from blueness import module
-from blue_options import string
-from blue_options.logger import crash_report
+from bluer_options import string
+from bluer_options.logger import crash_report
 
-from blue_geo import NAME
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

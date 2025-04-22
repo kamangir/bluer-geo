@@ -3,19 +3,19 @@ import argparse
 from blueness import module
 from blueness.argparse.generic import sys_exit
 
-from blue_options.env import ABCUL
-from blue_geo import NAME
-from blue_geo.catalog.functions import (
+from bluer_options.env import ABCUL
+from bluer_geo import NAME
+from bluer_geo.catalog.functions import (
     get_catalog_class,
     get_datacube_class_in_catalog,
     get_list_of_collections,
     get_list_of_datacube_classes,
 )
-from blue_geo.catalog.classes import list_of_catalogs
-from blue_geo.catalog.default import as_list_of_args
-from blue_geo.catalog.generic.stac.classes import STACCatalog
-from blue_geo.catalog.dataset import prep_dataset
-from blue_geo.logger import logger
+from bluer_geo.catalog.classes import list_of_catalogs
+from bluer_geo.catalog.default import as_list_of_args
+from bluer_geo.catalog.generic.stac.classes import STACCatalog
+from bluer_geo.catalog.dataset import prep_dataset
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

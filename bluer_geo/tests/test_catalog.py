@@ -1,10 +1,10 @@
 import pytest
 from typing import Type
 
-from blue_objects.objects import unique_object
+from bluer_objects.objects import unique_object
 
-from blue_geo.tests import assets
-from blue_geo.catalog import (
+from bluer_geo.tests import assets
+from bluer_geo.catalog import (
     list_of_catalog_classes,
     list_of_catalogs,
     list_of_datacube_classes,
@@ -15,7 +15,7 @@ from blue_geo.catalog import (
     get_list_of_datacube_classes,
     get_list_of_collections,
 )
-from blue_geo.catalog.generic import GenericCatalog, GenericDatacube
+from bluer_geo.catalog.generic import GenericCatalog, GenericDatacube
 
 
 @pytest.mark.parametrize(

@@ -1,7 +1,7 @@
 import pytest
-from blue_geo.tests import assets
-from blue_geo import env
-from blue_geo.catalog.generic import GenericCatalog, GenericDatacube
+from bluer_geo.tests import assets
+from bluer_geo import env
+from bluer_geo.catalog.generic import GenericCatalog, GenericDatacube
 
 
 def test_datacube():

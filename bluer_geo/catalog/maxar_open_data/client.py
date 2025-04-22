@@ -5,12 +5,12 @@ import pathlib
 from tqdm import tqdm
 from shapely.geometry import Point, Polygon
 
-from blue_objects import objects, file, metadata
+from bluer_objects import objects, file, metadata
 
-from blue_geo import env
-from blue_geo.logger.geoimage import log_geoimage
-from blue_geo.catalog.generic.generic.scope import raster_suffix
-from blue_geo.logger import logger
+from bluer_geo import env
+from bluer_geo.logger.geoimage import log_geoimage
+from bluer_geo.catalog.generic.generic.scope import raster_suffix
+from bluer_geo.logger import logger
 
 URL = "https://maxar-opendata.s3.amazonaws.com/events/catalog.json"
 

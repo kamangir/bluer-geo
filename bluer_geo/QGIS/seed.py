@@ -2,10 +2,10 @@ import os
 from typing import List
 from glob import glob
 
-from blue_objects.env import ABCLI_OBJECT_ROOT
-from blue_objects import file, path
+from bluer_objects.env import ABCLI_OBJECT_ROOT
+from bluer_objects import file, path
 
-from blue_geo import VERSION
+from bluer_geo import VERSION
 
 default_init_script: List[str] = [
     "QGIS.test",

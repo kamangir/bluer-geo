@@ -1,13 +1,13 @@
 from typing import List
 
 from blueness import module
-from blue_objects import host
+from bluer_objects import host
 
-from blue_geo import NAME
-from blue_geo.catalog.EarthSearch.classes import EarthSearchCatalog
-from blue_geo.catalog.generic.generic.stac import STACDatacube
-from blue_geo.catalog.generic.generic.scope import DatacubeScope
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.catalog.EarthSearch.classes import EarthSearchCatalog
+from bluer_geo.catalog.generic.generic.stac import STACDatacube
+from bluer_geo.catalog.generic.generic.scope import DatacubeScope
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

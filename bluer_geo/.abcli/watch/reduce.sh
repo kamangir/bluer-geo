@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function blue_geo_watch_reduce() {
+function bluer_geo_watch_reduce() {
     local options=$1
     local algo=$(abcli_option "$options" algo modality)
     local do_dryrun=$(abcli_option_int "$options" dryrun 0)
@@ -21,7 +21,7 @@ function blue_geo_watch_reduce() {
     [[ "$do_download" == 1 ]] &&
         abcli_download - $object_name
 
-    blue_geo_watch_targets copy - \
+    bluer_geo_watch_targets copy - \
         $query_object_name \
         $object_name
 
@@ -51,7 +51,7 @@ function blue_geo_watch_reduce() {
     done
 
     abcli_eval - \
-        blue_geo_watch_algo_${algo}_reduce "$@"
+        bluer_geo_watch_algo_${algo}_reduce "$@"
     local status="$?"
 
     [[ "$do_upload" == 1 ]] &&

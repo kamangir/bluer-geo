@@ -1,8 +1,8 @@
 from typing import List
 
-from blue_options.terminal import show_usage, xtra
+from bluer_options.terminal import show_usage, xtra
 
-from blue_geo.watch.targets.target_list import TargetList
+from bluer_geo.watch.targets.target_list import TargetList
 
 get_what_list = "catalog|collection|exists|one_liner|query_args"
 

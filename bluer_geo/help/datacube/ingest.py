@@ -1,8 +1,8 @@
 from typing import List
 
-from blue_options.terminal import show_usage, xtra
+from bluer_options.terminal import show_usage, xtra
 
-from blue_geo.catalog.generic.generic.scope import DatacubeScope
+from bluer_geo.catalog.generic.generic.scope import DatacubeScope
 
 
 def ingest_options(mono: bool) -> str:

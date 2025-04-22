@@ -1,7 +1,7 @@
 from blueness import module
-from blue_geo import NAME
-from blue_geo.catalog.generic import GenericCatalog
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.catalog.generic import GenericCatalog
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

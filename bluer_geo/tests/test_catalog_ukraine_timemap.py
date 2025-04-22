@@ -1,7 +1,7 @@
 import pytest
 import geopandas as gpd
-from blue_geo.tests import assets
-from blue_geo.catalog.ukraine_timemap import UkraineTimemapDatacube
+from bluer_geo.tests import assets
+from bluer_geo.catalog.ukraine_timemap import UkraineTimemapDatacube
 
 
 @pytest.mark.parametrize(

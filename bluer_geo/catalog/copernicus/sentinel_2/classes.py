@@ -1,11 +1,11 @@
 from typing import Any, Tuple, List
 import boto3
 
-from blue_geo import env
-from blue_geo.catalog.copernicus.classes import CopernicusCatalog
-from blue_geo.catalog.generic.generic.stac import STACDatacube
-from blue_geo.catalog.generic.generic.scope import DatacubeScope
-from blue_geo.logger import logger
+from bluer_geo import env
+from bluer_geo.catalog.copernicus.classes import CopernicusCatalog
+from bluer_geo.catalog.generic.generic.stac import STACDatacube
+from bluer_geo.catalog.generic.generic.scope import DatacubeScope
+from bluer_geo.logger import logger
 
 
 class CopernicusSentinel2Datacube(STACDatacube):

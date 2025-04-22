@@ -1,8 +1,8 @@
 #! /usr/bin/env bash
 
-function test_blue_geo_README() {
+function test_bluer_geo_README() {
     local options=$1
 
     abcli_eval ,$options \
-        blue_geo build_README
+        bluer_geo build_README
 }

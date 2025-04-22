@@ -1,9 +1,9 @@
 from blueness import module
 
-from blue_objects.metadata import post_to_object
+from bluer_objects.metadata import post_to_object
 
-from blue_geo import NAME
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

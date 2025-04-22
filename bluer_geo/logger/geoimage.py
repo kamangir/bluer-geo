@@ -3,14 +3,14 @@ import json
 import numpy as np
 
 from blueness import module
-from blue_options import string
-from blue_objects import file, objects
-from blue_objects.logger.matrix import log_matrix
-from blueflow import fullname as blueflow_fullname
+from bluer_options import string
+from bluer_objects import file, objects
+from bluer_objects.logger.matrix import log_matrix
+from bluer_flow import fullname as blueflow_fullname
 
-from blue_geo import fullname
-from blue_geo.file.load import load_geoimage
-from blue_geo import NAME
+from bluer_geo import fullname
+from bluer_geo.file.load import load_geoimage
+from bluer_geo import NAME
 
 NAME = module.name(__file__, NAME)
 

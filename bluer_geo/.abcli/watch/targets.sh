@@ -1,10 +1,10 @@
 #! /usr/bin/env bash
 
-function blue_geo_watch_targets() {
+function bluer_geo_watch_targets() {
     local task=$1
     [[ "$task" == "copy" ]] && task="cp"
 
-    local function_name=blue_geo_watch_targets_$task
+    local function_name=bluer_geo_watch_targets_$task
     if [[ $(type -t $function_name) == "function" ]]; then
         $function_name "${@:2}"
         return
@@ -16,12 +16,12 @@ function blue_geo_watch_targets() {
     fi
 
     if [[ ",get,list," == *","$task","* ]]; then
-        python3 -m blue_geo.watch.targets "$@"
+        python3 -m bluer_geo.watch.targets "$@"
         return
     fi
 
     if [[ "$task" == "test" ]]; then
-        python3 -m blue_geo.watch.targets test
+        python3 -m bluer_geo.watch.targets test
         return
     fi
 

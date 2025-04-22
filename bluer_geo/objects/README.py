@@ -1,10 +1,10 @@
 import os
 
-from blue_objects import file, README
-from blue_objects.env import ABCLI_PUBLIC_PREFIX
+from bluer_objects import file, README
+from bluer_objects.env import ABCLI_PUBLIC_PREFIX
 
-from blue_geo import NAME, VERSION, ICON, REPO_NAME
-from blue_geo.objects import special_objects
+from bluer_geo import NAME, VERSION, ICON, REPO_NAME
+from bluer_geo.objects import special_objects
 
 
 def build() -> bool:

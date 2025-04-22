@@ -5,11 +5,11 @@ import pandas as pd
 from shapely.geometry import Point
 
 from blueness import module
-from blue_objects import host
-from blue_objects import metadata, file, objects
-from blue_geo import NAME
-from blue_geo.file.save import save_geojson
-from blue_geo.logger import logger
+from bluer_objects import host
+from bluer_objects import metadata, file, objects
+from bluer_geo import NAME
+from bluer_geo.file.save import save_geojson
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

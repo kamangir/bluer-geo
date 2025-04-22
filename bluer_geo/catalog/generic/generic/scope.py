@@ -1,8 +1,8 @@
 from typing import Tuple, Dict, List, Union, Callable, Any
 
-from blue_options import string
+from bluer_options import string
 
-from blue_geo.logger import logger
+from bluer_geo.logger import logger
 
 raster_suffix = [
     ".jp2",
@@ -12,7 +12,7 @@ raster_suffix = [
 
 
 class DatacubeScope:
-    # description under blue_geo_datacube_ingest
+    # description under bluer_geo_datacube_ingest
     special_options = [
         "all",
         "metadata",

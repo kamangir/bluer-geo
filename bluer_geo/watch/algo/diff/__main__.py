@@ -3,11 +3,11 @@ import argparse
 from blueness import module
 from blueness.argparse.generic import sys_exit
 
-from blue_geo import NAME
-from blue_geo.env import BLUE_GEO_WATCH_ALGO_DIFF_MAP_DYNAMIC_RANGE
-from blue_geo.watch.algo.diff.map import map_function
-from blue_geo.watch.algo.modality.reduce import reduce_function
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.env import BLUE_GEO_WATCH_ALGO_DIFF_MAP_DYNAMIC_RANGE
+from bluer_geo.watch.algo.diff.map import map_function
+from bluer_geo.watch.algo.modality.reduce import reduce_function
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

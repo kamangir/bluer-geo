@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function blue_geo_watch_targets_publish() {
+function bluer_geo_watch_targets_publish() {
     local options=$1
     local use_template=$(abcli_option_int "$options" template 0)
 

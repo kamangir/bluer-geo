@@ -1,13 +1,13 @@
 #! /usr/bin/env bash
 
-function test_blue_geo_datacube_list() {
+function test_bluer_geo_datacube_list() {
     local datacube_id
 
     for datacube_id in \
         void \
         datacube-generic; do
         abcli_assert \
-            "$(blue_geo_datacube_list $datacube_id --log 0)" \
+            "$(bluer_geo_datacube_list $datacube_id --log 0)" \
             - empty
         [[ $? -ne 0 ]] && return 1
     done
@@ -19,7 +19,7 @@ function test_blue_geo_datacube_list() {
         $BLUE_GEO_TEST_DATACUBE_MAXAR_OPEN_DATA \
         $BLUE_GEO_TEST_DATACUBE_UKRAINE_TIMEMAP; do
         abcli_assert \
-            $(blue_geo_datacube_list $datacube_id --log 0) \
+            $(bluer_geo_datacube_list $datacube_id --log 0) \
             - non-empty
         [[ $? -ne 0 ]] && return 1
     done

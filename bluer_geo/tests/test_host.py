@@ -1,4 +1,4 @@
-from blue_geo.host import signature
+from bluer_geo.host import signature
 
 
 def test_signature():

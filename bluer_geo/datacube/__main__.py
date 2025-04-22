@@ -2,13 +2,13 @@ import argparse
 
 from blueness import module
 from blueness.argparse.generic import sys_exit
-from blue_objects import file
+from bluer_objects import file
 
-from blue_geo import NAME
-from blue_geo.catalog import get_datacube
-from blue_geo.catalog.generic.generic.scope import DatacubeScope
-from blue_geo.datacube.modalities import options as modality_options
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.catalog import get_datacube
+from bluer_geo.catalog.generic.generic.scope import DatacubeScope
+from bluer_geo.datacube.modalities import options as modality_options
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

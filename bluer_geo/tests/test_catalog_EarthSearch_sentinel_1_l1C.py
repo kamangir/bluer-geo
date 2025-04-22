@@ -1,10 +1,10 @@
 import pytest
 
-from blue_objects.objects import unique_object
+from bluer_objects.objects import unique_object
 
-from blue_geo.tests import assets
-from blue_geo.catalog.EarthSearch import EarthSearchCatalog
-from blue_geo.catalog.EarthSearch.sentinel_2_l1c import EarthSearchSentinel2L1CDatacube
+from bluer_geo.tests import assets
+from bluer_geo.catalog.EarthSearch import EarthSearchCatalog
+from bluer_geo.catalog.EarthSearch.sentinel_2_l1c import EarthSearchSentinel2L1CDatacube
 
 
 def test_get_list_of_collections():

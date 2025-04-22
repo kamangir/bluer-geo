@@ -3,15 +3,15 @@ import datetime
 from shapely.geometry import box
 import geopandas as gpd
 
-from blue_objects.metadata import post_to_object
-from blue_objects import file, objects
+from bluer_objects.metadata import post_to_object
+from bluer_objects import file, objects
 
-from blue_geo.catalog.maxar_open_data.classes import MaxarOpenDataCatalog
-from blue_geo.catalog.generic import GenericDatacube
-from blue_geo.catalog.generic.generic.scope import DatacubeScope
-from blue_geo import env
-from blue_geo.file.save import save_geojson
-from blue_geo.logger import logger
+from bluer_geo.catalog.maxar_open_data.classes import MaxarOpenDataCatalog
+from bluer_geo.catalog.generic import GenericDatacube
+from bluer_geo.catalog.generic.generic.scope import DatacubeScope
+from bluer_geo import env
+from bluer_geo.file.save import save_geojson
+from bluer_geo.logger import logger
 
 
 class MaxarOpenDataDatacube(GenericDatacube):

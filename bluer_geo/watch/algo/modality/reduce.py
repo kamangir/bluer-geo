@@ -4,15 +4,15 @@ from tqdm import tqdm
 import matplotlib.pyplot as plt
 
 from blueness import module
-from blue_objects import file, objects
-from blue_objects.graphics.gif import generate_animated_gif
-from blue_objects.metadata import post_to_object
-from blue_objects.graphics.signature import add_signature, justify_text
+from bluer_objects import file, objects
+from bluer_objects.graphics.gif import generate_animated_gif
+from bluer_objects.metadata import post_to_object
+from bluer_objects.graphics.signature import add_signature, justify_text
 
-from blue_geo import NAME
-from blue_geo.host import signature
-from blue_geo.watch.targets.target import Target
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.host import signature
+from bluer_geo.watch.targets.target import Target
+from bluer_geo.logger import logger
 
 
 NAME = module.name(__file__, NAME)

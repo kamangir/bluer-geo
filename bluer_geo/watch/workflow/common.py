@@ -2,11 +2,11 @@ from typing import Tuple, List
 import glob
 from functools import reduce
 
-from blue_objects import objects
+from bluer_objects import objects
 
-from blue_geo.watch.targets.target import Target
-from blue_geo.catalog.generic.generic.scope import raster_suffix
-from blue_geo.logger import logger
+from bluer_geo.watch.targets.target import Target
+from bluer_geo.catalog.generic.generic.scope import raster_suffix
+from bluer_geo.logger import logger
 
 
 def load_watch(

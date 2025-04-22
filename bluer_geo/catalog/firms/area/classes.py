@@ -4,16 +4,16 @@ import pandas as pd
 import geopandas as gpd
 from shapely.geometry import Point
 
-from blue_objects import file, objects
-from blue_objects import metadata
+from bluer_objects import file, objects
+from bluer_objects import metadata
 
-from blue_geo.catalog.firms import FirmsCatalog
-from blue_geo.catalog.generic import GenericDatacube
-from blue_geo.catalog.firms.area.enums import Area, Source
-from blue_geo.catalog.generic.generic.scope import DatacubeScope
-from blue_geo.file.save import save_geojson
-from blue_geo import env
-from blue_geo.logger import logger
+from bluer_geo.catalog.firms import FirmsCatalog
+from bluer_geo.catalog.generic import GenericDatacube
+from bluer_geo.catalog.firms.area.enums import Area, Source
+from bluer_geo.catalog.generic.generic.scope import DatacubeScope
+from bluer_geo.file.save import save_geojson
+from bluer_geo import env
+from bluer_geo.logger import logger
 
 
 class FirmsAreaDatacube(GenericDatacube):

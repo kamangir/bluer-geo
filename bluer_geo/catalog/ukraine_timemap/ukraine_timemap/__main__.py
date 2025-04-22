@@ -3,11 +3,11 @@ import argparse
 from blueness import module
 from blueness.argparse.generic import sys_exit
 
-from blue_geo import NAME
-from blue_geo.catalog.ukraine_timemap.ukraine_timemap.classes import (
+from bluer_geo import NAME
+from bluer_geo.catalog.ukraine_timemap.ukraine_timemap.classes import (
     UkraineTimemapDatacube,
 )
-from blue_geo.logger import logger
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

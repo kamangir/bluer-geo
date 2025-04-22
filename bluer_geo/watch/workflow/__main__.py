@@ -3,11 +3,11 @@ import argparse
 
 from blueness import module
 from blueness.argparse.generic import sys_exit
-from blue_objects import file
+from bluer_objects import file
 
-from blue_geo import NAME
-from blue_geo.watch.workflow.generation import generate_workflow
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.watch.workflow.generation import generate_workflow
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

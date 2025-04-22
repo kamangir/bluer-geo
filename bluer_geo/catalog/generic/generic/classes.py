@@ -3,17 +3,17 @@ from typing import Any, Tuple, Dict, List
 import numpy as np
 
 from blueness import module
-from blue_options import string
-from blue_objects import file, objects, path
-from blue_objects.metadata import post_to_object
-from blue_objects.logger.matrix import log_matrix_hist
-from blue_objects.env import ABCLI_OBJECT_ROOT
+from bluer_options import string
+from bluer_objects import file, objects, path
+from bluer_objects.metadata import post_to_object
+from bluer_objects.logger.matrix import log_matrix_hist
+from bluer_objects.env import ABCLI_OBJECT_ROOT
 
-from blue_geo import NAME
-from blue_geo.file.load import load_geoimage
-from blue_geo.catalog.generic.classes import GenericCatalog, VoidCatalog
-from blue_geo.catalog.generic.generic.scope import DatacubeScope
-from blue_geo.logger import logger
+from bluer_geo import NAME
+from bluer_geo.file.load import load_geoimage
+from bluer_geo.catalog.generic.classes import GenericCatalog, VoidCatalog
+from bluer_geo.catalog.generic.generic.scope import DatacubeScope
+from bluer_geo.logger import logger
 
 NAME = module.name(__file__, NAME)
 

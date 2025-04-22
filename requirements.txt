@@ -1,5 +1,5 @@
-abcli
-blueflow
+bluer_ai
+bluer_flow
 
 opencv-python
 

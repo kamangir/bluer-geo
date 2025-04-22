@@ -1,8 +1,8 @@
 from typing import List
 
-from blue_options.terminal import show_usage, xtra
+from bluer_options.terminal import show_usage, xtra
 
-from blue_geo.datacube.modalities import options as modality_options
+from bluer_geo.datacube.modalities import options as modality_options
 
 
 def help_generate(

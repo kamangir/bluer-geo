@@ -13,4 +13,4 @@ run `@datacube ingest`  or use [`@catalog query <catalog> <collection> ingest`](
 ```bash
 @datacube ingest help
 ```
---help-- blue_geo datacube ingest
+help::: bluer_geo datacube ingest

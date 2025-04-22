@@ -1,12 +1,12 @@
 import os
 
-from blue_options.help.functions import get_help
-from blue_objects import file, README
+from bluer_options.help.functions import get_help
+from bluer_objects import file, README
 
-from blue_geo import NAME, VERSION, ICON, REPO_NAME
-from blue_geo.watch.targets import jasper
-from blue_geo.help.functions import help_functions
-from blue_geo.watch.targets.target_list import TargetList
+from bluer_geo import NAME, VERSION, ICON, REPO_NAME
+from bluer_geo.watch.targets import jasper
+from bluer_geo.help.functions import help_functions
+from bluer_geo.watch.targets.target_list import TargetList
 
 
 def build() -> bool:

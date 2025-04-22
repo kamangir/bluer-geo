@@ -1,4 +1,4 @@
-from blue_geo.logger import logger
+from bluer_geo.logger import logger
 
 
 def test_logger():

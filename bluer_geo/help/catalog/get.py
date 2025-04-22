@@ -1,6 +1,6 @@
 from typing import List
 
-from blue_options.terminal import show_usage
+from bluer_options.terminal import show_usage
 
 
 def help_get(

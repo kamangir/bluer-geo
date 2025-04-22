@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-function blue_geo_watch_targets_cp() {
+function bluer_geo_watch_targets_cp() {
     local options=$1
 
     local object_name_1=$(abcli_clarify_object $2 .)

@@ -1,4 +1,4 @@
-from blue_geo.catalog.generic.stac.classes import STACCatalog
+from bluer_geo.catalog.generic.stac.classes import STACCatalog
 
 
 class EarthSearchCatalog(STACCatalog):
