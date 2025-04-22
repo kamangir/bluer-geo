@@ -18,15 +18,6 @@ function bluer_geo_watch() {
         fi
     done
 
-    if [[ $(abcli_option_int "$options" batch 0) == 1 ]]; then
-        abcli_aws_batch_eval \
-            name=bluer-geo-watch-$(abcli_string_timestamp_short),$options,~batch \
-            bluer_geo_watch \
-            - \
-            "${@:2}"
-        return
-    fi
-
     local do_dryrun=$(abcli_option_int "$options" dryrun 0)
 
     local algo=$(abcli_option "$algo_options" algo modality)
