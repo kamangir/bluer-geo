@@ -2,7 +2,7 @@
 
 function test_bluer_geo_datacube_generate() {
     local options=$1
-    local list_of_product=$(abcli_option "$options" product FRE+SRE)
+    local list_of_product=$(bluer_ai_option "$options" product FRE+SRE)
 
     # TODO: remove after the SkyFox fix.
     return 0
@@ -11,7 +11,7 @@ function test_bluer_geo_datacube_generate() {
 
     local product
     for product in $(echo $list_of_product | tr + " "); do
-        abcli_log "product: $product"
+        bluer_ai_log "product: $product"
 
         bluer_geo_datacube_ingest \
             scope=rgbx+_${product}_,$options \
@@ -24,6 +24,6 @@ function test_bluer_geo_datacube_generate() {
             --modality rgb@$product
         [[ $? -ne 0 ]] && return 1
 
-        abcli_hr
+        bluer_ai_hr
     done
 }

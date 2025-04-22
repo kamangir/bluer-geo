@@ -1,7 +1,6 @@
 import os
 
 from bluer_objects import file, README
-from bluer_objects.env import ABCLI_PUBLIC_PREFIX
 
 from bluer_geo import NAME, VERSION, ICON, REPO_NAME
 from bluer_geo.objects import special_objects
@@ -28,7 +27,7 @@ def build() -> bool:
                         "💾 [{}-{}]({}/{}-{}.tar.gz)".format(
                             object_name,
                             special_objects[object_name].version,
-                            ABCLI_PUBLIC_PREFIX,
+                            "TODO: fix",
                             object_name,
                             special_objects[object_name].version,
                         ),

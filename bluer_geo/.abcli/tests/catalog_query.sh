@@ -3,7 +3,7 @@
 function test_bluer_geo_catalog_query() {
     local options=$1
     local list_of_catalogs=$(echo $bluer_geo_list_of_catalogs | tr , +)
-    list_of_catalogs=$(abcli_option "$options" catalog $list_of_catalogs)
+    list_of_catalogs=$(bluer_ai_option "$options" catalog $list_of_catalogs)
 
     bluer_geo_watch_targets_download
 
@@ -20,9 +20,9 @@ function test_bluer_geo_catalog_query() {
         [[ $? -ne 0 ]] && return 1
 
         for datacube_class in $(echo $list_of_datacube_classes | tr , " "); do
-            abcli_log "testing $catalog/$datacube_class/query ..."
+            bluer_ai_log "testing $catalog/$datacube_class/query ..."
 
-            local object_name="bashtest-$catalog-$datacube_class-$(abcli_string_timestamp)"
+            local object_name="bashtest-$catalog-$datacube_class-$(bluer_ai_string_timestamp)"
 
             local target=$(bluer_geo_watch_targets list \
                 --catalog_name $catalog \
@@ -32,7 +32,7 @@ function test_bluer_geo_catalog_query() {
 
             local query_args=""
             if [[ ! -z "$target" ]]; then
-                abcli_log "🎯 target: $target"
+                bluer_ai_log "🎯 target: $target"
                 query_args=$(bluer_geo_watch_targets get \
                     --what query_args \
                     --target_name $target \
@@ -40,13 +40,13 @@ function test_bluer_geo_catalog_query() {
                     --log 0)
             fi
 
-            abcli_eval ,$options \
+            bluer_ai_eval ,$options \
                 bluer_geo catalog query $catalog $datacube_class \
                 ingest \
                 $object_name $query_args
             [[ $? -ne 0 ]] && return 1
 
-            abcli_assert \
+            bluer_ai_assert \
                 $(bluer_geo catalog query read len $object_name) \
                 0 \
                 not
@@ -56,17 +56,7 @@ function test_bluer_geo_catalog_query() {
 
             local public_name=datacube-$catalog-$datacube_class
 
-            abcli_publish \
-                as=$public_name,tar \
-                $datacube_id
-            [[ $? -ne 0 ]] && return 1
-
-            abcli_publish \
-                as=$public_name,suffix=.png \
-                $datacube_id
-            [[ $? -ne 0 ]] && return 1
-
-            abcli_hr
+            bluer_ai_hr
         done
     done
     return 0

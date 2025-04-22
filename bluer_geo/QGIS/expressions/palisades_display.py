@@ -106,7 +106,7 @@ def palisades_display(layer_filename, row, feature, parent):
             if os.path.exists(thumbnail_full_filename)
             else seed(
                 [
-                    "abcli",
+                    "bluer_objects",
                     "download",
                     f"filename={thumbnail_filename}",
                     thumbnail_object_name,
@@ -123,7 +123,7 @@ def palisades_display(layer_filename, row, feature, parent):
                     "building={},~download".format(row["building_id"]),
                     object_name,
                     ";",
-                    "abcli",
+                    "bluer_ai",
                     "open",
                     "QGIS",
                     object_name,

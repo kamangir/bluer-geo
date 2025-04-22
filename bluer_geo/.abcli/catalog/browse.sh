@@ -3,7 +3,7 @@
 function bluer_geo_catalog_browse() {
     local catalog=$1
     if [[ ",$bluer_geo_list_of_catalogs," != *",$catalog,"* ]]; then
-        abcli_log_error "@catalog: browse: $catalog: catalog not found."
+        bluer_ai_log_error "@catalog: browse: $catalog: catalog not found."
         return 1
     fi
 
@@ -14,5 +14,5 @@ function bluer_geo_catalog_browse() {
         --catalog $catalog \
         "${@:3}")
 
-    abcli_browse $url
+    bluer_ai_browse $url
 }

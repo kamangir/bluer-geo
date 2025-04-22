@@ -83,7 +83,7 @@ def Q_upload(
 ):
     Q_seed(
         command=[
-            "abcli_upload",
+            "bluer_objects_upload",
             f"filename={Q_project.name}.qgz" if thing == "qgz" else "-",
             Q_get_thing_name(thing),
         ],

@@ -11,14 +11,14 @@ export BLUE_GEO_QGIS_TEMPLATES_OBJECT_NAME=QGIS-templates-v1
 
 mkdir -p $BLUE_GEO_QGIS_PATH_SERVER
 
-# internal function to abcli_seed.
-function abcli_seed_QGIS() {
+# internal function to bluer_ai_seed.
+function bluer_ai_seed_QGIS() {
     # seed is NOT local
     seed=$(python3 -m bluer_geo.QGIS generate_seed)
 }
 
 function bluer_geo_QGIS() {
-    local task=$(abcli_unpack_keyword $1 help)
+    local task=$1
 
     local function_name=bluer_geo_QGIS_$task
     if [[ $(type -t $function_name) == "function" ]]; then
@@ -27,12 +27,12 @@ function bluer_geo_QGIS() {
     fi
 
     if [ "$task" == "seed" ]; then
-        abcli_seed QGIS "${@:2}"
+        bluer_ai_seed QGIS "${@:2}"
         return
     fi
 
-    abcli_log_error "QGIS: $task: command not found."
+    bluer_ai_log_error "QGIS: $task: command not found."
     return 1
 }
 
-abcli_source_caller_suffix_path /QGIS
+bluer_ai_source_caller_suffix_path /QGIS

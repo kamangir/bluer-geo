@@ -2,10 +2,10 @@
 
 function bluer_geo_catalog_query_read() {
     local options=$1
-    local show_len=$(abcli_option_int "$options" len 0)
-    local do_all=$(abcli_option_int "$options" all 0)
+    local show_len=$(bluer_ai_option_int "$options" len 0)
+    local do_all=$(bluer_ai_option_int "$options" all 0)
 
-    local object_name=$(abcli_clarify_object $2 .)
+    local object_name=$(bluer_ai_clarify_object $2 .)
 
     local extra_args=""
     [[ "$do_all" == 1 ]] &&

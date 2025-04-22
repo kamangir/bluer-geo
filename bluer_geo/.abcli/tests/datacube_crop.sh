@@ -9,7 +9,7 @@ function test_bluer_geo_datacube_crop() {
         $datacube_id
     [[ $? -ne 0 ]] && return 1
 
-    local suffix=test_bluer_geo_datacube_crop-$(abcli_string_timestamp_short)
+    local suffix=test_bluer_geo_datacube_crop-$(bluer_ai_string_timestamp_short)
 
     bluer_geo_datacube_crop \
         suffix=$suffix,$options \

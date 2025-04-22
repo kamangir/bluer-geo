@@ -2,21 +2,21 @@
 
 function bluer_geo_datacube_crop() {
     local options=$1
-    local do_dryrun=$(abcli_option_int "$options" dryrun 0)
-    local do_download=$(abcli_option_int "$options" download $(abcli_not $do_dryrun))
-    local suffix=$(abcli_option "$options" suffix $(abcli_string_timestamp_short))
+    local do_dryrun=$(bluer_ai_option_int "$options" dryrun 0)
+    local do_download=$(bluer_ai_option_int "$options" download $(bluer_ai_not $do_dryrun))
+    local suffix=$(bluer_ai_option "$options" suffix $(bluer_ai_string_timestamp_short))
 
-    local object_name=$(abcli_clarify_object $2 ..)
+    local object_name=$(bluer_ai_clarify_object $2 ..)
     [[ "$do_download" == 1 ]] &&
-        abcli_download - $object_name
+        bluer_objects_download - $object_name
 
     local cutline=$ABCLI_OBJECT_ROOT/$object_name/target/shape.geojson
     if [[ ! -f "$cutline" ]]; then
-        abcli_log_error "@datacube: crop: $cutline: file not found."
+        bluer_ai_log_error "@datacube: crop: $cutline: file not found."
         return 1
     fi
 
-    local datacube_id=$(abcli_clarify_object $3 .)
+    local datacube_id=$(bluer_ai_clarify_object $3 .)
 
     local cropped_datacube_id=$datacube_id-DERIVED-crop-$suffix
 
@@ -25,7 +25,7 @@ function bluer_geo_datacube_crop() {
         $cropped_datacube_id
 
     local crs=$(bluer_geo_gdal_get_crs $cutline)
-    abcli_log "cutline crs: $crs"
+    bluer_ai_log "cutline crs: $crs"
 
     local list_of_files=$(bluer_geo_datacube_list $datacube_id \
         --delim space \
@@ -39,13 +39,13 @@ function bluer_geo_datacube_crop() {
         source_filename=$ABCLI_OBJECT_ROOT/$datacube_id/$filename
 
         local source_filename_crs=$(bluer_geo_gdal_get_crs $source_filename)
-        abcli_log "cropping $filename @ $source_filename_crs ..."
+        bluer_ai_log "cropping $filename @ $source_filename_crs ..."
 
         destination_filename=$ABCLI_OBJECT_ROOT/$cropped_datacube_id/$filename
         destination_path=$(dirname "$destination_filename")
         mkdir -pv $destination_path
 
-        abcli_eval dryrun=$do_dryrun \
+        bluer_ai_eval dryrun=$do_dryrun \
             gdalwarp -cutline $cutline \
             -crop_to_cutline \
             -dstalpha \
@@ -54,7 +54,7 @@ function bluer_geo_datacube_crop() {
             $destination_filename
 
         local destination_filename_crs=$(bluer_geo_gdal_get_crs $destination_filename)
-        abcli_log "output crs: $destination_filename_crs - expected $crs."
+        bluer_ai_log "output crs: $destination_filename_crs - expected $crs."
     done
 
     return 0

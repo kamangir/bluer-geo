@@ -21,7 +21,6 @@ from bluer_geo.watch.targets.Mount_Etna import README as Mount_Etna
 from bluer_geo.watch.targets.Palisades import README as Palisades
 from bluer_geo.watch.targets.Sheerness import README as Sheerness
 from bluer_geo.watch.targets.Silver_Peak import README as Silver_Peak
-from bluer_objects.env import ABCLI_PUBLIC_PREFIX
 
 
 list_of_targets = {
@@ -74,11 +73,9 @@ for target_name in sorted(list_of_targets.keys()):
 
         thumbnail_object_name = list(list_of_objects.keys())[thumbnail_index]
 
-        thumbnail_url = (
-            f"{ABCLI_PUBLIC_PREFIX}/{thumbnail_object_name}/{thumbnail_object_name}.gif"
-        )
+        thumbnail_url = f"TBA/{thumbnail_object_name}/{thumbnail_object_name}.gif"
 
-        thumbnail_scale_url = f"{ABCLI_PUBLIC_PREFIX}/{thumbnail_object_name}/{thumbnail_object_name}{thumbnail_scale_str}.gif"
+        thumbnail_scale_url = f"TBA/{thumbnail_object_name}/{thumbnail_object_name}{thumbnail_scale_str}.gif"
 
         items += [
             "",
@@ -102,8 +99,8 @@ for target_name in sorted(list_of_targets.keys()):
         "- {}.".format(
             ", ".join(
                 [
-                    f"[`{object_name}`]({ABCLI_PUBLIC_PREFIX}/{object_name}.tar.gz)",
-                    f"[gif]({ABCLI_PUBLIC_PREFIX}/{object_name}/{object_name}.gif)",
+                    f"[`{object_name}`](TBA/{object_name}.tar.gz)",
+                    f"[gif](TBA/{object_name}/{object_name}.gif)",
                 ]
                 + description
             )
@@ -121,7 +118,7 @@ macros: Dict[str, str] = {
                 [
                     "[{}X]({}/{}/{}{}.gif)".format(
                         scale,
-                        ABCLI_PUBLIC_PREFIX,
+                        "TBA",
                         object_name,
                         object_name,
                         "" if scale == 1 else f"-{scale}X",

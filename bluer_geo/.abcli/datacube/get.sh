@@ -2,9 +2,9 @@
 
 function bluer_geo_datacube_get() {
     local options=$1
-    local what=$(abcli_option_choice "$options" catalog,raw,template void)
+    local what=$(bluer_ai_option_choice "$options" catalog,raw,template void)
 
-    local datacube_id=$(abcli_clarify_object $2 .)
+    local datacube_id=$(bluer_ai_clarify_object $2 .)
 
     python3 -m bluer_geo.datacube \
         get \

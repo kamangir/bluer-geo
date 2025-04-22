@@ -6,7 +6,7 @@ function test_bluer_geo_datacube_list() {
     for datacube_id in \
         void \
         datacube-generic; do
-        abcli_assert \
+        bluer_ai_assert \
             "$(bluer_geo_datacube_list $datacube_id --log 0)" \
             - empty
         [[ $? -ne 0 ]] && return 1
@@ -18,7 +18,7 @@ function test_bluer_geo_datacube_list() {
         $BLUE_GEO_TEST_DATACUBE_FIRMS_AREA \
         $BLUE_GEO_TEST_DATACUBE_MAXAR_OPEN_DATA \
         $BLUE_GEO_TEST_DATACUBE_UKRAINE_TIMEMAP; do
-        abcli_assert \
+        bluer_ai_assert \
             $(bluer_geo_datacube_list $datacube_id --log 0) \
             - non-empty
         [[ $? -ne 0 ]] && return 1

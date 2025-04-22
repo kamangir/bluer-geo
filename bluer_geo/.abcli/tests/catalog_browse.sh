@@ -5,7 +5,7 @@ function test_bluer_geo_catalog_browse() {
 
     local catalog
     for catalog in $(echo $bluer_geo_list_of_catalogs | tr , " "); do
-        abcli_eval ,$options \
+        bluer_ai_eval ,$options \
             bluer_geo catalog browse $catalog
         [[ $? -ne 0 ]] && return 1
     done

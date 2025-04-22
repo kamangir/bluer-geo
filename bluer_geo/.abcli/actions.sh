@@ -4,7 +4,7 @@ function bluer_geo_action_git_before_push() {
     bluer_geo build_README
     [[ $? -ne 0 ]] && return 1
 
-    [[ "$(abcli_git get_branch)" != "main" ]] &&
+    [[ "$(bluer_ai_git get_branch)" != "main" ]] &&
         return 0
 
     bluer_geo_watch_targets_upload

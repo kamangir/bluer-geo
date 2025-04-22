@@ -2,7 +2,7 @@
 
 function bluer_geo_catalog_list() {
     local options=$1
-    local what=$(abcli_option_choice "$options" catalogs,collections,datacubes,datacube_classes catalogs)
+    local what=$(bluer_ai_option_choice "$options" catalogs,collections,datacubes,datacube_classes catalogs)
 
     python3 -m bluer_geo.catalog \
         list \
@@ -15,7 +15,7 @@ function bluer_geo_catalog_ls() {
 }
 
 function bluer_geo_catalog_load_all() {
-    abcli_log_list $bluer_geo_list_of_catalogs \
+    bluer_ai_log_list $bluer_geo_list_of_catalogs \
         --delim , \
         --before "🌐 loading" \
         --after "catalog(s)"
@@ -23,13 +23,13 @@ function bluer_geo_catalog_load_all() {
     local catalog
     local list_of_collections
     for catalog in $(echo $bluer_geo_list_of_catalogs | tr , " "); do
-        abcli_source_caller_suffix_path /$catalog ignore_error
+        bluer_ai_source_caller_suffix_path /$catalog ignore_error
 
         list_of_datacube_classes=$(bluer_geo_catalog list \
             datacube_classes \
             --catalog $catalog \
             --log 0)
-        abcli_log_list "$list_of_datacube_classes" \
+        bluer_ai_log_list "$list_of_datacube_classes" \
             --before "🧊 $GREEN$catalog$NC: loaded" \
             --after "collection(s)"
     done

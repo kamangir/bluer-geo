@@ -3,7 +3,7 @@
 function test_bluer_geo_catalog_list() {
     local options=$1
 
-    abcli_eval ,$options \
+    bluer_ai_eval ,$options \
         bluer_geo catalog list \
         catalogs \
         --delim , \
@@ -14,7 +14,7 @@ function test_bluer_geo_catalog_list() {
     local what
     for catalog in $(echo $bluer_geo_list_of_catalogs | tr , " "); do
         for what in datacubes datacubes datacube_classes; do
-            abcli_eval ,$options \
+            bluer_ai_eval ,$options \
                 bluer_geo catalog list \
                 $what \
                 --catalog $catalog \

@@ -3,11 +3,11 @@
 function bluer_geo_watch_targets_download() {
     local options=$1
 
-    abcli_download - \
+    bluer_objects_download - \
         $BLUE_GEO_WATCH_TARGET_LIST \
         "$@"
 
-    abcli_list_log $(python3 -m bluer_geo.watch.targets \
+    bluer_ai_list_log $(python3 -m bluer_geo.watch.targets \
         list \
         --log 0) \
         --before "downloaded" \

@@ -1,5 +1,4 @@
 from typing import List, Dict
-from bluer_objects.env import ABCLI_PUBLIC_PREFIX
 
 list_of_dates: List[str] = [
     "2024_7_20",
@@ -10,7 +9,7 @@ list_of_dates: List[str] = [
 date_items: Dict[str, List[str]] = {
     date: [
         "`{}`".format(date.replace("_", "-")),
-        f"![image]({ABCLI_PUBLIC_PREFIX}/geo-watch-2024-09-06-Jasper-a/11_U_MU_{date}_0_TCI.png)",
+        f"![image](TBA/geo-watch-2024-09-06-Jasper-a/11_U_MU_{date}_0_TCI.png)",
     ]
     for date in list_of_dates
 }

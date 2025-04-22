@@ -2,7 +2,7 @@
 
 function test_bluer_geo_ingest() {
     local options=$1
-    local list_of_objects=$(abcli_option "$options" objects global-power-plant-database)
+    local list_of_objects=$(bluer_ai_option "$options" objects global-power-plant-database)
 
     local object_name
     for object_name in $(echo $list_of_objects | tr + " "); do
@@ -12,7 +12,7 @@ function test_bluer_geo_ingest() {
             $object_name
         [[ $? -ne 0 ]] && return 1
 
-        abcli_hr
+        bluer_ai_hr
     done
 
     return 0

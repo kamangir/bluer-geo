@@ -7,7 +7,7 @@ function bluer_geo_QGIS_templates() {
     local object_path=$ABCLI_OBJECT_ROOT/$object_name
 
     if [ "$task" == "download" ]; then
-        abcli_download - $object_name
+        bluer_objects_download - $object_name
 
         rsync \
             -avv \
@@ -22,10 +22,10 @@ function bluer_geo_QGIS_templates() {
             "$BLUE_GEO_QGIS_PATH_TEMPLATES/" \
             $object_path/
 
-        abcli_upload - $object_name
+        bluer_objects_upload - $object_name
 
         return
     fi
 
-    abcli_log_error "@QGIS: templates: $task: command not found."
+    bluer_ai_log_error "@QGIS: templates: $task: command not found."
 }

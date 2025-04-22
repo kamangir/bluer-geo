@@ -3,17 +3,16 @@
 function test_bluer_geo_watch() {
     local options=$1
 
-    local list_of_targets=$(abcli_option "$options" target chilcotin-river-landslide-test)
-    local do_publish=$(abcli_option_int "$options" publish 1)
-    local list_of_algo=$(abcli_option "$options" algo modality+diff)
+    local list_of_targets=$(bluer_ai_option "$options" target chilcotin-river-landslide-test)
+    local list_of_algo=$(bluer_ai_option "$options" algo modality+diff)
 
     local algo
     local target
     for algo in $(echo $list_of_algo | tr + " "); do
         for target in $(echo $list_of_targets | tr + " "); do
-            abcli_log "🎯 $algo on $target ..."
+            bluer_ai_log "🎯 $algo on $target ..."
 
-            local object_name=test_bluer_geo_watch-$algo-$target-$(abcli_string_timestamp)
+            local object_name=test_bluer_geo_watch-$algo-$target-$(bluer_ai_string_timestamp)
 
             bluer_geo_watch \
                 ,$options \
@@ -25,28 +24,7 @@ function test_bluer_geo_watch() {
                 $object_name
             [[ $? -ne 0 ]] && return 1
 
-            [[ "$do_publish" == 0 ]] &&
-                continue
-
-            local public_name=test_bluer_geo_watch_v4-$algo-$target
-            abcli_log "publishing $object_name -> $public_name ..."
-
-            abcli_publish \
-                as=$public_name,~download,tar \
-                $object_name
-            [[ $? -ne 0 ]] && return 1
-
-            local object_path=$ABCLI_OBJECT_ROOT/$object_name
-            cp -v \
-                $object_path/$object_name.gif \
-                $object_path/$public_name.gif
-
-            abcli_publish \
-                as=$public_name,~download,prefix=$public_name,suffix=.gif \
-                $object_name
-            [[ $? -ne 0 ]] && return 1
-
-            abcli_hr
+            bluer_ai_hr
         done
     done
 

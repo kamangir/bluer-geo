@@ -11,7 +11,7 @@ function bluer_geo_watch_targets() {
     fi
 
     if [[ "$task" == "edit" ]]; then
-        abcli_code $ABCLI_OBJECT_ROOT/$BLUE_GEO_WATCH_TARGET_LIST/metadata.yaml
+        bluer_ai_code $ABCLI_OBJECT_ROOT/$BLUE_GEO_WATCH_TARGET_LIST/metadata.yaml
         return
     fi
 
@@ -25,8 +25,8 @@ function bluer_geo_watch_targets() {
         return
     fi
 
-    abcli_log_error "@targets: $task: command not found."
+    bluer_ai_log_error "@targets: $task: command not found."
     return 1
 }
 
-abcli_source_caller_suffix_path /targets
+bluer_ai_source_caller_suffix_path /targets

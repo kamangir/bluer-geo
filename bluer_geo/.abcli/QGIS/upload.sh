@@ -1,5 +1,5 @@
 function bluer_geo_QGIS_upload() {
-    local object_name=$(abcli_clarify_object $1 .)
+    local object_name=$(bluer_ai_clarify_object $1 .)
 
     local object_path=$ABCLI_OBJECT_ROOT/$object_name
     local qgz_filename=$object_path/$object_name.qgz
@@ -8,7 +8,7 @@ function bluer_geo_QGIS_upload() {
             list_dependencies \
             --filename "$qgz_filename" \
             --delim +)
-        abcli_log_list "$list_of_dependencies" \
+        bluer_ai_log_list "$list_of_dependencies" \
             --before "uploading" \
             --after "dependenci(es)" \
             --delim +
@@ -16,9 +16,9 @@ function bluer_geo_QGIS_upload() {
         local dependency_name
         for dependency_name in $(echo $list_of_dependencies | tr + " "); do
             [[ "$dependency_name" == "$object_name" ]] && continue
-            abcli_upload - $dependency_name
+            bluer_objects_upload - $dependency_name
         done
     fi
 
-    abcli_upload - $object_name
+    bluer_objects_upload - $object_name
 }

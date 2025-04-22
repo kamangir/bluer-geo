@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 function bluer_geo_catalog() {
-    local task=$(abcli_unpack_keyword $1 help)
+    local task=$1
 
     local function_name=bluer_geo_catalog_$task
     if [[ $(type -t $function_name) == "function" ]]; then
@@ -9,8 +9,8 @@ function bluer_geo_catalog() {
         return
     fi
 
-    abcli_log_error "@catalog: $task: command not found."
+    bluer_ai_log_error "@catalog: $task: command not found."
     return 1
 }
 
-abcli_source_caller_suffix_path /catalog
+bluer_ai_source_caller_suffix_path /catalog

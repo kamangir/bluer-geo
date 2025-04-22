@@ -10,5 +10,5 @@ function bluer_geo_watch_targets_upload() {
         $BLUE_GEO_WATCH_TARGET_LIST
     [[ $? -ne 0 ]] && return 1
 
-    abcli_upload - $BLUE_GEO_WATCH_TARGET_LIST
+    bluer_objects_upload - $BLUE_GEO_WATCH_TARGET_LIST
 }

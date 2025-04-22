@@ -16,7 +16,7 @@ function test_bluer_geo_datacube_get_catalog() {
         datacube_id=$(python3 -c "print('$test_asset'.split(':',1)[0])")
         expected_catalog=$(python3 -c "print('$test_asset'.split(':',1)[1])")
 
-        abcli_assert \
+        bluer_ai_assert \
             $(bluer_geo_datacube_get catalog $datacube_id) \
             $expected_catalog
         [[ $? -ne 0 ]] && return 1
@@ -58,7 +58,7 @@ function test_bluer_geo_datacube_get_template() {
         datacube_id=$(python3 -c "print('$test_asset'.split(':',1)[0])")
         expected_template=$(python3 -c "print('$test_asset'.split(':',1)[1])")
 
-        abcli_assert \
+        bluer_ai_assert \
             $(bluer_geo_datacube_get template $datacube_id) \
             $expected_template
         [[ $? -ne 0 ]] && return 1

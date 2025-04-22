@@ -13,7 +13,7 @@ function bluer_geo_QGIS_expressions() {
 
     if [[ "$task" == push ]]; then
         local options=$2
-        local do_push=$(abcli_option_int "$options" push 0)
+        local do_push=$(bluer_ai_option_int "$options" push 0)
 
         rsync \
             -avv \
@@ -26,6 +26,6 @@ function bluer_geo_QGIS_expressions() {
         return
     fi
 
-    abcli_log_error "QGIS: expressions: $task: command not found."
+    bluer_ai_log_error "QGIS: expressions: $task: command not found."
     return 1
 }

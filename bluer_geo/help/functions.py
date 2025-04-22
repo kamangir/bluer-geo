@@ -1,4 +1,4 @@
-from abcli.help.generic import help_functions as generic_help_functions
+from bluer_ai.help.generic import help_functions as generic_help_functions
 
 from bluer_geo import ALIAS
 from bluer_geo.help.catalog import help_functions as help_catalog

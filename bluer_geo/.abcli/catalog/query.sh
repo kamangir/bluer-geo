@@ -10,14 +10,14 @@ function bluer_geo_catalog_query() {
             return
         fi
 
-        abcli_log_error "@catalog: query: $catalog: catalog not found."
+        bluer_ai_log_error "@catalog: query: $catalog: catalog not found."
         return 1
     fi
 
     local options=$2
-    local do_dryrun=$(abcli_option_int "$options" dryrun 0)
-    local do_select=$(abcli_option_int "$options" select 0)
-    local do_upload=$(abcli_option_int "$options" upload 0)
+    local do_dryrun=$(bluer_ai_option_int "$options" dryrun 0)
+    local do_select=$(bluer_ai_option_int "$options" select 0)
+    local do_upload=$(bluer_ai_option_int "$options" upload 0)
 
     local list_of_datacube_classes=$(bluer_geo_catalog list \
         datacube_classes \
@@ -31,13 +31,13 @@ function bluer_geo_catalog_query() {
         --delim , \
         --log 0)
 
-    local datacube_class=$(abcli_option_choice "$options" $list_of_datacube_classes)
+    local datacube_class=$(bluer_ai_option_choice "$options" $list_of_datacube_classes)
     [[ -z "$datacube_class" ]] &&
         datacube_class=$default_datacube_class
 
     local ingest_options=$3
 
-    local object_name=$(abcli_clarify_object $4 query-$catalog-$datacube_class-$(abcli_string_timestamp))
+    local object_name=$(bluer_ai_clarify_object $4 query-$catalog-$datacube_class-$(bluer_ai_string_timestamp))
 
     local is_STAC=$(bluer_geo_catalog_get is_STAC --catalog $catalog)
 
@@ -50,16 +50,16 @@ function bluer_geo_catalog_query() {
         extra_args="--catalog $catalog --collection $datacube_class"
     fi
 
-    abcli_log "$log_suffix query: $catalog/$datacube_class -> $object_name ..."
+    bluer_ai_log "$log_suffix query: $catalog/$datacube_class -> $object_name ..."
 
-    abcli_eval dryrun=$do_dryrun \
+    bluer_ai_eval dryrun=$do_dryrun \
         python3 -m bluer_geo.catalog \
         prep_dataset \
         --module_name $module_name \
         --query_object_name $object_name
     [[ $? -ne 0 ]] && return 1
 
-    abcli_eval dryrun=$do_dryrun \
+    bluer_ai_eval dryrun=$do_dryrun \
         python3 -m $module_name \
         query \
         --object_name $object_name \
@@ -68,9 +68,9 @@ function bluer_geo_catalog_query() {
     [[ $? -ne 0 ]] && return 1
 
     [[ "$do_upload" == 1 ]] &&
-        abcli_upload - $object_name
+        bluer_objects_upload - $object_name
 
-    local do_ingest=$(abcli_option_int "$ingest_options" ingest 0)
+    local do_ingest=$(bluer_ai_option_int "$ingest_options" ingest 0)
 
     [[ "$do_ingest" == 0 ]] &&
         [[ "$do_select" == 0 ]] &&
@@ -78,10 +78,10 @@ function bluer_geo_catalog_query() {
 
     local datacube_id=$(bluer_geo_catalog_query_read - $object_name)
     if [[ -z "$datacube_id" ]]; then
-        abcli_log_error "@catalog: query: $catalog: $datacube_class: no datacube id found."
+        bluer_ai_log_error "@catalog: query: $catalog: $datacube_class: no datacube id found."
         return 1
     fi
-    abcli_log "🧊 $datacube_id"
+    bluer_ai_log "🧊 $datacube_id"
 
     local status=0
     if [[ "$do_ingest" == 1 ]]; then
@@ -92,9 +92,9 @@ function bluer_geo_catalog_query() {
     fi
 
     [[ "$do_select" == 1 ]] &&
-        abcli_select $datacube_id
+        bluer_ai_select $datacube_id
 
     return $status
 }
 
-abcli_source_caller_suffix_path /query
+bluer_ai_source_caller_suffix_path /query

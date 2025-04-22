@@ -11,7 +11,7 @@ def help_ingest(
 ) -> str:
     options = "".join(
         [
-            "publish,upload",
+            "upload",
             xtra(",version=<v1>", mono=mono),
         ]
     )

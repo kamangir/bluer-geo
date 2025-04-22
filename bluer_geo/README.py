@@ -3,7 +3,6 @@ import os
 from bluer_options import MARQUEE as default_MARQUEE
 from bluer_options.help.functions import get_help
 from bluer_objects import file, README
-from bluer_objects.env import ABCLI_PUBLIC_PREFIX
 
 from bluer_geo.catalog.README import build as build_catalog
 from bluer_geo.watch.README import items as watch_items, macros as watch_macros
@@ -46,15 +45,9 @@ items = README.Items(
             "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/catalog/ukraine_timemap",
         },
         {
-            "name": "vancouver-watching",
-            "description": f"catalog: Vancouver watching with AI, last build: [🔗]({ABCLI_PUBLIC_PREFIX}/test_vancouver_watching_ingest/animation.gif).",
-            "marquee": f"{ABCLI_PUBLIC_PREFIX}/2024-01-06-20-39-46-73614/2024-01-06-20-39-46-73614-2X.gif?raw=true",
-            "url": "https://github.com/kamangir/Vancouver-Watching",
-        },
-        {
             "name": "geo-watch",
             "description": "watch the planet's story unfold.",
-            "marquee": f"{ABCLI_PUBLIC_PREFIX}/geo-watch-2024-09-06-Jasper-a/geo-watch-2024-09-06-Jasper-a-2X.gif",
+            "marquee": "TBA",
             "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/watch",
         },
         {

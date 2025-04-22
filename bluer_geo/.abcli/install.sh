@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
-function abcli_install_bluer_geo() {
+function bluer_ai_install_bluer_geo() {
     bluer_geo_gdal_install
 }
 
-abcli_install_module bluer_geo 2.1.1
+bluer_ai_install_module bluer_geo 2.1.1

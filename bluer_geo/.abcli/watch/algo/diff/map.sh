@@ -2,13 +2,13 @@
 
 function bluer_geo_watch_algo_diff_map() {
     local options=$1
-    local algo=$(abcli_option "$options" algo diff)
-    local do_dryrun=$(abcli_option_int "$options" dryrun 0)
-    local depth=$(abcli_option "$options" depth 2)
-    local offset=$(abcli_option "$options" offset 0)
-    local dynamic_range=$(abcli_option "$options" range $BLUE_GEO_WATCH_ALGO_DIFF_MAP_DYNAMIC_RANGE)
-    local suffix=$(abcli_option "$options" suffix $(abcli_string_timestamp_short))
-    local do_upload=$(abcli_option_int "$options" upload $(abcli_not $do_dryrun))
+    local algo=$(bluer_ai_option "$options" algo diff)
+    local do_dryrun=$(bluer_ai_option_int "$options" dryrun 0)
+    local depth=$(bluer_ai_option "$options" depth 2)
+    local offset=$(bluer_ai_option "$options" offset 0)
+    local dynamic_range=$(bluer_ai_option "$options" range $BLUE_GEO_WATCH_ALGO_DIFF_MAP_DYNAMIC_RANGE)
+    local suffix=$(bluer_ai_option "$options" suffix $(bluer_ai_string_timestamp_short))
+    local do_upload=$(bluer_ai_option_int "$options" upload $(bluer_ai_not $do_dryrun))
 
     local query_object_name=$2
 
@@ -30,7 +30,7 @@ function bluer_geo_watch_algo_diff_map() {
         $query_object_name \
         $object_name
 
-    abcli_eval dryrun=$do_dryrun \
+    bluer_ai_eval dryrun=$do_dryrun \
         python3 -m bluer_geo.watch.algo.$algo \
         map \
         --query_object_name $query_object_name \
@@ -42,7 +42,7 @@ function bluer_geo_watch_algo_diff_map() {
     local status="$?"
 
     [[ "$do_upload" == 1 ]] &&
-        abcli_upload - $object_name
+        bluer_objects_upload - $object_name
 
     return $status
 }

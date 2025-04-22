@@ -3,18 +3,18 @@
 function test_bluer_geo_watch_query() {
     local options=$1
 
-    local list_of_targets=$(abcli_option "$options" target chilcotin-river-landslide-test)
+    local list_of_targets=$(bluer_ai_option "$options" target chilcotin-river-landslide-test)
 
     local target
     for target in $(echo $list_of_targets | tr + " "); do
-        local object_name=test_bluer_geo_watch_query-$target-$(abcli_string_timestamp)
+        local object_name=test_bluer_geo_watch_query-$target-$(bluer_ai_string_timestamp)
 
         bluer_geo_watch_query \
             target=$target \
             $object_name
         [[ $? -ne 0 ]] && return 1
 
-        abcli_hr
+        bluer_ai_hr
     done
 
     return 0
