@@ -40,7 +40,7 @@ items = README.Items(
         },
         {
             "name": "geo-watch",
-            "description": "watch the planet's story unfold.",
+            "description": "Watch the planet's story unfold.",
             "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/blue-geo-watch.png?raw=true",
             "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/watch",
         },
@@ -52,19 +52,19 @@ items = README.Items(
         },
         {
             "name": "QGIS",
-            "description": "an AI terraform for [QGIS](https://www.qgis.org/).",
+            "description": "An AI terraform for [QGIS](https://www.qgis.org/).",
             "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/QGIS.jpg?raw=true",
             "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/QGIS/README.md",
         },
         {
             "name": "catalog",
-            "description": "generalized STAC Catalogs.",
+            "description": "Generalized STAC Catalogs.",
             "marquee": default_MARQUEE,
             "url": "https://github.com/kamangir/bluer-geo/tree/main/bluer_geo/catalog",
         },
         {
             "name": "datacube",
-            "description": "generalized STAC Items.",
+            "description": "Generalized STAC Items.",
             "marquee": default_MARQUEE,
             "url": "https://github.com/kamangir/bluer-geo/tree/main/bluer_geo/datacube",
         },
