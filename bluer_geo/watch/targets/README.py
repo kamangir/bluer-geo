@@ -7,9 +7,16 @@ from bluer_geo import NAME, VERSION, ICON, REPO_NAME
 from bluer_geo.watch.targets import jasper
 from bluer_geo.help.functions import help_functions
 from bluer_geo.watch.targets.target_list import TargetList
+from bluer_geo.logger import logger
 
 
 def build() -> bool:
+
+    logger.warning(
+        "disabled, tracked in https://github.com/kamangir/bluer-geo/issues/2"
+    )
+    return True
+
     target_list = TargetList(download=True)
 
     return all(
