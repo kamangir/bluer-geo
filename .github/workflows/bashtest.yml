@@ -24,7 +24,11 @@ jobs:
       - name: Run bash tests
         env:
           FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+          COPERNICUS_AWS_ACCESS_KEY_ID: ${{ secrets.COPERNICUS_AWS_ACCESS_KEY_ID }}
+          COPERNICUS_AWS_SECRET_ACCESS_KEY: ${{ secrets.COPERNICUS_AWS_SECRET_ACCESS_KEY }}
         run: |
           echo "FIRMS_MAP_KEY: $FIRMS_MAP_KEY"
+          echo "COPERNICUS_AWS_ACCESS_KEY_ID: $COPERNICUS_AWS_ACCESS_KEY_ID"
+          echo "COPERNICUS_AWS_SECRET_ACCESS_KEY: $COPERNICUS_AWS_SECRET_ACCESS_KEY"
 
           ./.github/workflows/bashtest.sh bluer_geo
