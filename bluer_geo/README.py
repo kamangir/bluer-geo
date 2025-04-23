@@ -17,13 +17,13 @@ items = README.Items(
         {
             "name": "Maxar Open Data",
             "description": "catalog: [Maxar's Open Data program](https://www.maxar.com/open-data/)",
-            "marquee": "https://github.com/kamangir/assets/blob/main/bluer-geo/MaxarOpenData.png?raw=true",
+            "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/MaxarOpenData.png?raw=true",
             "url": "https://github.com/kamangir/bluer-geo/tree/main/bluer_geo/catalog/maxar_open_data",
         },
         {
             "name": "copernicus",
             "description": "catalog: [Copernicus Data Space Ecosystem - Europe's eyes on Earth](https://dataspace.copernicus.eu/)",
-            "marquee": "https://github.com/kamangir/assets/blob/main/bluer-geo/copernicus.jpg?raw=true",
+            "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/copernicus.jpg?raw=true",
             "url": "https://github.com/kamangir/bluer-geo/tree/main/bluer_geo/catalog/copernicus",
         },
         {
@@ -47,7 +47,7 @@ items = README.Items(
         {
             "name": "global-power-plant-database",
             "description": "The Global Power Plant Database is a comprehensive, open source database of power plants around the world [datasets.wri.org](https://datasets.wri.org/datasets/global-power-plant-database).",
-            "marquee": "https://github.com/kamangir/assets/blob/main/bluer-geo/global_power_plant_database-cover.png?raw=true",
+            "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/global_power_plant_database-cover.png?raw=true",
             "url": "https://github.com/kamangir/bluer-geo/tree/main/bluer_geo/objects/md/global_power_plant_database.md",
         },
         {
