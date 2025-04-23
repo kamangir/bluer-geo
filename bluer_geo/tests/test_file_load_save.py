@@ -30,6 +30,7 @@ def test_object():
     logger.info(f"deleting {NAME}.test_object ...")
 
 
+@pytest.mark.skip(reason="test asset is missing")
 @pytest.mark.parametrize(
     [
         "load_func",
