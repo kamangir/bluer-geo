@@ -29,7 +29,7 @@ items = README.Items(
         {
             "name": "firms-area",
             "description": "catalog: Fire Information for Resource Management System ([FIRMS](https://firms.modaps.eosdis.nasa.gov)).",
-            "marquee": "https://raw.githubusercontent.com/kamangir/assets/main/bluer-geo/datacube-firms_area.jpg",
+            "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/datacube-firms_area.jpg?raw=true",
             "url": "https://github.com/kamangir/bluer-geo/tree/main/bluer_geo/catalog/firms",
         },
         {
@@ -41,7 +41,7 @@ items = README.Items(
         {
             "name": "geo-watch",
             "description": "watch the planet's story unfold.",
-            "marquee": "TBA",
+            "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/blue-geo-watch.png?raw=true",
             "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/watch",
         },
         {
@@ -53,7 +53,7 @@ items = README.Items(
         {
             "name": "QGIS",
             "description": "an AI terraform for [QGIS](https://www.qgis.org/).",
-            "marquee": "https://raw.githubusercontent.com/kamangir/assets/main/bluer-geo/QGIS.jpg",
+            "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/QGIS.jpg?raw=true",
             "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/QGIS/README.md",
         },
         {
