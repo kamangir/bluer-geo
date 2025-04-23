@@ -8,7 +8,7 @@ VERSION = "5.10.1"
 
 REPO_NAME = "bluer-geo"
 
-MARQUEE = "https://github.com/kamangir/assets/raw/main/bluer_flow-local-map-reduce/workflow.gif?raw=true"
+MARQUEE = "https://github.com/kamangir/assets/blob/main/blue-geo/firms.jpg?raw=true"
 
 ALIAS = "@geo"
 
