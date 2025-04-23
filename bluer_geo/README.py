@@ -39,10 +39,10 @@ items = README.Items(
             "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/catalog/ukraine_timemap",
         },
         {
-            "name": "geo-watch",
-            "description": "Watch the planet's story unfold.",
-            "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/blue-geo-watch.png?raw=true",
-            "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/watch",
+            "name": "QGIS",
+            "description": "An AI terraform for [QGIS](https://www.qgis.org/).",
+            "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/QGIS.jpg?raw=true",
+            "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/QGIS/README.md",
         },
         {
             "name": "global-power-plant-database",
@@ -51,10 +51,10 @@ items = README.Items(
             "url": "https://github.com/kamangir/bluer-geo/tree/main/bluer_geo/objects/md/global_power_plant_database.md",
         },
         {
-            "name": "QGIS",
-            "description": "An AI terraform for [QGIS](https://www.qgis.org/).",
-            "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/QGIS.jpg?raw=true",
-            "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/QGIS/README.md",
+            "name": "geo-watch",
+            "description": "Watch the planet's story unfold.",
+            "marquee": "https://github.com/kamangir/assets/blob/main/blue-geo/blue-geo-watch.png?raw=true",
+            "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/watch",
         },
         {
             "name": "catalog",
