@@ -4,11 +4,11 @@ ICON = "🌐"
 
 DESCRIPTION = f"{ICON} AI for a Blue Planet."
 
-VERSION = "5.9.1"
+VERSION = "5.10.1"
 
 REPO_NAME = "bluer-geo"
 
-MARQUEE = "https://github.com/kamangir/assets/blob/main/blue-geo/firms.jpg?raw=true"
+MARQUEE = "https://github.com/kamangir/assets/raw/main/bluer_flow-local-map-reduce/workflow.gif?raw=true"
 
 ALIAS = "@geo"
 
