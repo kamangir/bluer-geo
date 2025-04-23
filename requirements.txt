@@ -1,6 +1,7 @@
 bluer_ai
 bluer_flow
 
+boto3
 opencv-python
 
 # https://github.com/shapely/shapely/issues/2208
