@@ -12,8 +12,8 @@ function test_bluer_geo_watch_targets_list() {
 
     bluer_ai_assert \
         $(bluer_geo_watch_targets list \
-            --catalog_name EarthSearch \
-            --collection sentinel_2_l1c \
+            --catalog_name copernicus \
+            --collection sentinel_2 \
             --delim + \
             --log 0) \
         - non-empty

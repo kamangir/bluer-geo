@@ -1,6 +1,5 @@
 from bluer_geo.catalog.generic import GenericDatacube, VoidDatacube
 from bluer_geo.catalog.copernicus import CopernicusSentinel2Datacube
-from bluer_geo.catalog.EarthSearch import EarthSearchSentinel2L1CDatacube
 from bluer_geo.catalog.firms.area import FirmsAreaDatacube
 from bluer_geo.catalog.maxar_open_data import MaxarOpenDataDatacube
 from bluer_geo.catalog.ukraine_timemap import UkraineTimemapDatacube
@@ -16,8 +15,6 @@ datacubes = {
     #
     "datacube-copernicus-void": VoidDatacube,
     env.BLUE_GEO_TEST_DATACUBE_COPERNICUS_SENTINEL_2: CopernicusSentinel2Datacube,
-    #
-    env.BLUE_GEO_TEST_DATACUBE_EARTHSEARCH_SENTINEL2_L1C: EarthSearchSentinel2L1CDatacube,
     #
     "datacube-firms_void-void-void-void-void": VoidDatacube,
     "datacube-firms_area-void-void-void-void": VoidDatacube,

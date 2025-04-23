@@ -27,12 +27,6 @@ items = README.Items(
             "url": "https://github.com/kamangir/bluer-geo/tree/main/bluer_geo/catalog/copernicus",
         },
         {
-            "name": "EarthSearch",
-            "description": "catalog: [Earth Search by Element 84 (earth-search-aws)](https://stacindex.org/catalogs/earth-search#/).",
-            "marquee": "https://github.com/kamangir/assets/blob/main/bluer-geo/viewer-aws-element84-com.png?raw=true",
-            "url": "https://github.com/kamangir/bluer-geo/blob/main/bluer_geo/catalog/EarthSearch",
-        },
-        {
             "name": "firms-area",
             "description": "catalog: Fire Information for Resource Management System ([FIRMS](https://firms.modaps.eosdis.nasa.gov)).",
             "marquee": "https://raw.githubusercontent.com/kamangir/assets/main/bluer-geo/datacube-firms_area.jpg",

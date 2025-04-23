@@ -8,10 +8,6 @@ from bluer_geo.catalog.generic import (
     VoidDatacube,
 )
 from bluer_geo.catalog.copernicus import CopernicusCatalog, CopernicusSentinel2Datacube
-from bluer_geo.catalog.EarthSearch import (
-    EarthSearchCatalog,
-    EarthSearchSentinel2L1CDatacube,
-)
 from bluer_geo.catalog.firms import FirmsCatalog
 from bluer_geo.catalog.firms.area import FirmsAreaDatacube
 from bluer_geo.catalog.maxar_open_data import (
@@ -26,7 +22,6 @@ from bluer_geo.catalog.ukraine_timemap import (
 list_of_catalog_classes: List[Type[GenericCatalog]] = [
     GenericCatalog,
     CopernicusCatalog,
-    EarthSearchCatalog,
     FirmsCatalog,
     MaxarOpenDataCatalog,
     UkraineTimemapCatalog,
@@ -47,6 +42,5 @@ list_of_datacube_classes: List[Type[GenericDatacube]] = [
     FirmsAreaDatacube,
     UkraineTimemapDatacube,
     CopernicusSentinel2Datacube,
-    EarthSearchSentinel2L1CDatacube,
     MaxarOpenDataDatacube,
 ]

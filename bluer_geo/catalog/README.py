@@ -29,7 +29,6 @@ def build() -> bool:
             (catalog, {"--urls--": get_catalog(catalog).urls_as_str()})
             for catalog in [
                 "copernicus",
-                "EarthSearch",
                 "maxar_open_data",
                 "firms",
                 "ukraine_timemap",

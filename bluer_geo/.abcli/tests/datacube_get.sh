@@ -8,7 +8,6 @@ function test_bluer_geo_datacube_get_catalog() {
         void:void \
         datacube-generic:generic \
         $BLUE_GEO_TEST_DATACUBE_COPERNICUS_SENTINEL_2:copernicus \
-        $BLUE_GEO_TEST_DATACUBE_EARTHSEARCH_SENTINEL2_L1C:EarthSearch \
         $BLUE_GEO_TEST_DATACUBE_FIRMS_AREA:firms \
         $BLUE_GEO_TEST_DATACUBE_MAXAR_OPEN_DATA:maxar_open_data \
         $BLUE_GEO_TEST_DATACUBE_UKRAINE_TIMEMAP:ukraine_timemap; do
@@ -29,7 +28,6 @@ function test_bluer_geo_datacube_get_raw() {
     local datacube_id
     for datacube_id in \
         $BLUE_GEO_TEST_DATACUBE_COPERNICUS_SENTINEL_2 \
-        $BLUE_GEO_TEST_DATACUBE_EARTHSEARCH_SENTINEL2_L1C \
         $BLUE_GEO_TEST_DATACUBE_FIRMS_AREA \
         $BLUE_GEO_TEST_DATACUBE_MAXAR_OPEN_DATA \
         $BLUE_GEO_TEST_DATACUBE_UKRAINE_TIMEMAP; do
@@ -50,7 +48,6 @@ function test_bluer_geo_datacube_get_template() {
         void:unknown-template \
         datacube-generic:unknown-template \
         $BLUE_GEO_TEST_DATACUBE_COPERNICUS_SENTINEL_2:unknown-template \
-        $BLUE_GEO_TEST_DATACUBE_EARTHSEARCH_SENTINEL2_L1C:unknown-template \
         $BLUE_GEO_TEST_DATACUBE_FIRMS_AREA:$BLUE_GEO_QGIS_TEMPLATE_FIRMS_AREA \
         $BLUE_GEO_TEST_DATACUBE_MAXAR_OPEN_DATA:$BLUE_GEO_QGIS_TEMPLATE_MAXAR_OPEN_DATA \
         $BLUE_GEO_TEST_DATACUBE_UKRAINE_TIMEMAP:$BLUE_GEO_QGIS_TEMPLATE_UKRAINE_TIMEMAP; do

@@ -13,7 +13,7 @@ def target_list():
 @pytest.mark.parametrize(
     ["catalog_name", "collection", "expected_target"],
     [
-        ["EarthSearch", "sentinel_2_l1c", "burning-man-2024"],
+        ["copernicus", "sentinel_2", "chilcotin-river-landslide"],
     ],
 )
 def test_target_list(

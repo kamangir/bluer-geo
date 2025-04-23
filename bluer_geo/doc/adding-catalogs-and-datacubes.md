@@ -2,11 +2,11 @@
 
 to add a new [catalog](../catalog/) or [datacube](../datacube/) follow these steps,
 
-0️⃣ copy and refactor [`notebooks/EarthSearch.ipynb`](../../notebooks/EarthSearch.ipynb).
+0️⃣ copy and refactor [`notebooks/copernicus-v3.ipynb`](../../notebooks/copernicus-v3.ipynb).
 
-1️⃣ clone [`catalog/EarthSearch`](../catalog/EarthSearch/) and define `NovelCatalog`.
+1️⃣ clone [`catalog/copernicus`](../catalog/copernicus/) and define `NovelCatalog`.
 
-2️⃣ clone [`catalog/EarthSearch/sentinel_2_l1c`](../catalog/EarthSearch/sentinel_2_l1c/) and define `NovelDatacube`.
+2️⃣ clone [`catalog/copernicus/sentinel_2`](../catalog/copernicus/sentinel_2/) and define `NovelDatacube`.
 
 3️⃣ add `NovelCatalog` and `NovelDatacube` to [`catalog/classes.py`](../catalog/classes.py).
 
@@ -29,7 +29,7 @@ to add a new [catalog](../catalog/) or [datacube](../datacube/) follow these ste
 - [`tests/help.sh`](../../bluer_geo/.abcli/tests/help.sh)
 - [`tests/assets.py`](../../bluer_geo/tests/assets.py)
 
-8️⃣ copy and refactor [`tests/test_catalog_EarthSearch_sentinel_1_l1C.py`](../../bluer_geo/tests/test_catalog_EarthSearch_sentinel_1_l1C.py).
+8️⃣ copy and refactor [`tests/test_catalog_copernicus_sentinel_2.py`](../../bluer_geo/tests/test_catalog_copernicus_sentinel_2.py).
 
 9️⃣ add a relevant target,
 ```bash

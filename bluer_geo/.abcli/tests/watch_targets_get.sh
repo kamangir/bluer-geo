@@ -6,9 +6,9 @@ function test_bluer_geo_watch_targets_get_catalog() {
     bluer_ai_assert \
         $(bluer_geo_watch_targets get \
             --what catalog \
-            --target_name burning-man-2024 \
+            --target_name chilcotin-river-landslide \
             --log 0) \
-        EarthSearch
+        copernicus
     [[ $? -ne 0 ]] && return 1
 
     bluer_ai_assert \
@@ -25,9 +25,9 @@ function test_bluer_geo_watch_targets_get_collection() {
     bluer_ai_assert \
         $(bluer_geo_watch_targets get \
             --what collection \
-            --target_name Leonardo \
+            --target_name chilcotin-river-landslide \
             --log 0) \
-        Venus
+        sentinel_2
     [[ $? -ne 0 ]] && return 1
 
     bluer_ai_assert \
@@ -44,7 +44,7 @@ function test_bluer_geo_watch_targets_get_exists() {
     bluer_ai_assert \
         $(bluer_geo_watch_targets get \
             --what exists \
-            --target_name Leonardo \
+            --target_name chilcotin-river-landslide \
             --log 0) \
         1
     [[ $? -ne 0 ]] && return 1
@@ -63,10 +63,10 @@ function test_bluer_geo_watch_targets_get_query_args() {
     bluer_ai_assert \
         $(bluer_geo_watch_targets get \
             --what query_args \
-            --target_name Leonardo \
+            --target_name chilcotin-river-landslide \
             --log 0 \
             --delim +) \
-        Venus
+        sentinel_2
     [[ $? -ne 0 ]] && return 1
 
     bluer_ai_assert \

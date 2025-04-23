@@ -9,7 +9,6 @@ to add a new catalog follow [these instructions](../doc/adding-catalogs-and-data
 ## supported catalogs
 
 - [copernicus](./copernicus/)
-- [EarthSearch](./EarthSearch/)
 - [firms](./firms/)
 - [Maxar Open Data](./maxar_open_data/)
 - [ukraine_timemap](./ukraine_timemap/)
