@@ -17,16 +17,24 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install -e .
+      - name: Install GDAL
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gdal-bin python3-gdal
       - name: Run bash tests
         env:
           WEBDAV_HOSTNAME: ${{ secrets.WEBDAV_HOSTNAME }}
           WEBDAV_LOGIN: ${{ secrets.WEBDAV_LOGIN }}
           WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
-          BLUER_PLUGIN_SECRET: ${{ secrets.BLUER_PLUGIN_SECRET }}
+          FIRMS_MAP_KEY: ${{ secrets.FIRMS_MAP_KEY }}
+          COPERNICUS_AWS_ACCESS_KEY_ID: ${{ secrets.COPERNICUS_AWS_ACCESS_KEY_ID }}
+          COPERNICUS_AWS_SECRET_ACCESS_KEY: ${{ secrets.COPERNICUS_AWS_SECRET_ACCESS_KEY }}
         run: |
           echo "WEBDAV_HOSTNAME: $WEBDAV_HOSTNAME"
           echo "WEBDAV_LOGIN: $WEBDAV_LOGIN"
           echo "WEBDAV_PASSWORD: $WEBDAV_PASSWORD"
-          echo "BLUER_PLUGIN_SECRET: $BLUER_PLUGIN_SECRET"
+          echo "FIRMS_MAP_KEY: $FIRMS_MAP_KEY"
+          echo "COPERNICUS_AWS_ACCESS_KEY_ID: $COPERNICUS_AWS_ACCESS_KEY_ID"
+          echo "COPERNICUS_AWS_SECRET_ACCESS_KEY: $COPERNICUS_AWS_SECRET_ACCESS_KEY"
 
-          ./.github/workflows/bashtest.sh bluer_plugin
+          ./.github/workflows/bashtest.sh bluer_geo
