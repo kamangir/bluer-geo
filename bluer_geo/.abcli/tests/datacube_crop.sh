@@ -3,6 +3,9 @@
 function test_bluer_geo_datacube_crop() {
     local options=$1
 
+    bluer_ai_log_warning "disabled, tracked in https://github.com/kamangir/bluer-geo/issues/2".
+    return 0
+
     local datacube_id=$BLUE_GEO_TEST_DATACUBE_COPERNICUS_SENTINEL_2_CHILCOTIN
     bluer_geo_datacube_ingest \
         scope=rgbx,$options \

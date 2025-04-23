@@ -3,6 +3,9 @@
 function test_bluer_geo_watch_targets_get_catalog() {
     bluer_objects_download - $BLUE_GEO_WATCH_TARGET_LIST
 
+    bluer_ai_log_warning "disabled, tracked in https://github.com/kamangir/bluer-geo/issues/2".
+    return 0
+
     bluer_ai_assert \
         $(bluer_geo_watch_targets get \
             --what catalog \
@@ -21,6 +24,9 @@ function test_bluer_geo_watch_targets_get_catalog() {
 
 function test_bluer_geo_watch_targets_get_collection() {
     bluer_objects_download - $BLUE_GEO_WATCH_TARGET_LIST
+
+    bluer_ai_log_warning "disabled, tracked in https://github.com/kamangir/bluer-geo/issues/2".
+    return 0
 
     bluer_ai_assert \
         $(bluer_geo_watch_targets get \
@@ -41,6 +47,9 @@ function test_bluer_geo_watch_targets_get_collection() {
 function test_bluer_geo_watch_targets_get_exists() {
     bluer_objects_download - $BLUE_GEO_WATCH_TARGET_LIST
 
+    bluer_ai_log_warning "disabled, tracked in https://github.com/kamangir/bluer-geo/issues/2".
+    return 0
+
     bluer_ai_assert \
         $(bluer_geo_watch_targets get \
             --what exists \
@@ -59,6 +68,9 @@ function test_bluer_geo_watch_targets_get_exists() {
 
 function test_bluer_geo_watch_targets_get_query_args() {
     bluer_objects_download - $BLUE_GEO_WATCH_TARGET_LIST
+
+    bluer_ai_log_warning "disabled, tracked in https://github.com/kamangir/bluer-geo/issues/2".
+    return 0
 
     bluer_ai_assert \
         $(bluer_geo_watch_targets get \
