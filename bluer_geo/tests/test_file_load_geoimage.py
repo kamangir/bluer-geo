@@ -9,6 +9,7 @@ from bluer_geo import env
 from bluer_geo.file.load import load_geoimage
 
 
+@pytest.mark.skip(reason="test asset is missing")
 @pytest.mark.parametrize(
     [
         "object_name",
