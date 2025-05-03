@@ -56,4 +56,3 @@ datacube:
 map-key: https://firms.modaps.eosdis.nasa.gov/api/map_key/
 
 area api: https://firms.modaps.eosdis.nasa.gov/api/area/
-
