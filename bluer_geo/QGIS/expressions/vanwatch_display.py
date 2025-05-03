@@ -5,34 +5,33 @@ from qgis.gui import *
 
 
 @qgsfunction(args="auto", group="Custom", referenced_columns=[])
-def vanwatch_display(layer_path, cameras, feature, parent):
+def vanwatch_display(layer_filename, cameras, feature, parent):
     """
     Produce display text for a vanwatch mapid.
 
     vanwatch_display(
-        layer_property(@layer,'name'),
+        layer_property(@layer,'path'),
         "cameras"
     )
     """
-    version = "5.5.1"
+    version = "5.16.1"
 
-    object_name = layer_path.split(os.sep)[-2]
-
-    url_prefix = "https://kamangir-public.s3.ca-central-1.amazonaws.com"
+    layer_path = os.sep.join(layer_filename.split(os.sep)[:-1])
+    object_name = layer_filename.split(os.sep)[-2]
 
     image_name_list = [url.split("/")[-1].split(".")[0] for url in cameras.split(",")]
 
-    url_list = [
-        "{}/{}/{}-inference.jpg".format(
-            url_prefix,
-            object_name,
+    image_filename_list = [
+        "file://{}/{}-inference.jpg".format(
+            layer_path,
             image_name,
         )
         for image_name in image_name_list
     ]
 
     image_tag_list = [
-        f'<a href="{url}"><img src="{url}" height=100 ></a>' for url in url_list
+        f'<a href="{image_filename}"><img src="{image_filename}" alt="{image_filename}" height=100 ></a>'
+        for image_filename in image_filename_list
     ]
 
     return "\n".join(
