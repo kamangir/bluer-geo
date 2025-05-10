@@ -2,8 +2,6 @@ import math
 from qgis.core import *
 from qgis.gui import *
 
-# version 2.1.1
-
 
 @qgsfunction(args="auto", group="Custom", referenced_columns=[])
 def vanwatch_label(row, webdings, feature, parent):
@@ -12,6 +10,8 @@ def vanwatch_label(row, webdings, feature, parent):
 
     vanwatch_label(row)
     """
+    # version 8.1.1
+
     row = {
         keyword: value
         for keyword, value in row.items()
@@ -39,7 +39,7 @@ def vanwatch_label(row, webdings, feature, parent):
             ]
         )
         if not output:
-            return output
+            return "µ"
 
         side = math.ceil(math.sqrt(len(output)))
         matrix = {0: []}
