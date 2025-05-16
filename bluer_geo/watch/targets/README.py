@@ -11,12 +11,6 @@ from bluer_geo.logger import logger
 
 
 def build() -> bool:
-
-    logger.warning(
-        "disabled, tracked in https://github.com/kamangir/bluer-geo/issues/2"
-    )
-    return True
-
     target_list = TargetList(download=True)
 
     return all(
