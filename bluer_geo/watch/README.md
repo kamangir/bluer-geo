@@ -143,7 +143,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/geo-watch-Cache-Creek-2x-wider-2024-11-05/geo-watch-Cache-Creek-2x-wider-2024-11-05-4X.gif?raw=true&random=pns2elmmmjbrtng4)](TBA/geo-watch-Cache-Creek-2x-wider-2024-11-05/geo-watch-Cache-Creek-2x-wider-2024-11-05.gif)
+[![image](TBA/geo-watch-Cache-Creek-2x-wider-2024-11-05/geo-watch-Cache-Creek-2x-wider-2024-11-05-4X.gif?raw=true&random=nltnphiloron02es)](TBA/geo-watch-Cache-Creek-2x-wider-2024-11-05/geo-watch-Cache-Creek-2x-wider-2024-11-05.gif)
 
 </details>
 
@@ -157,7 +157,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/DrugSuperLab-2024-12-09-ZnmC5L/DrugSuperLab-2024-12-09-ZnmC5L-4X.gif?raw=true&random=j319ktn12yv224wy)](TBA/DrugSuperLab-2024-12-09-ZnmC5L/DrugSuperLab-2024-12-09-ZnmC5L.gif)
+[![image](TBA/DrugSuperLab-2024-12-09-ZnmC5L/DrugSuperLab-2024-12-09-ZnmC5L-4X.gif?raw=true&random=qpaimamfgk247p9j)](TBA/DrugSuperLab-2024-12-09-ZnmC5L/DrugSuperLab-2024-12-09-ZnmC5L.gif)
 
 </details>
 
@@ -170,7 +170,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/geo-watch-2024-09-04-Fagradalsfjall-a/geo-watch-2024-09-04-Fagradalsfjall-a-2X.gif?raw=true&random=ianjxmjd2nwu2puv)](TBA/geo-watch-2024-09-04-Fagradalsfjall-a/geo-watch-2024-09-04-Fagradalsfjall-a.gif)
+[![image](TBA/geo-watch-2024-09-04-Fagradalsfjall-a/geo-watch-2024-09-04-Fagradalsfjall-a-2X.gif?raw=true&random=iwwkvlxn3d37iicr)](TBA/geo-watch-2024-09-04-Fagradalsfjall-a/geo-watch-2024-09-04-Fagradalsfjall-a.gif)
 
 </details>
 
@@ -181,7 +181,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/geo-watch-Jasper-2024-11-03/geo-watch-Jasper-2024-11-03-2X.gif?raw=true&random=xm5xpqvtvfyxcs3f)](TBA/geo-watch-Jasper-2024-11-03/geo-watch-Jasper-2024-11-03.gif)
+[![image](TBA/geo-watch-Jasper-2024-11-03/geo-watch-Jasper-2024-11-03-2X.gif?raw=true&random=9lfyti32l4lq06rd)](TBA/geo-watch-Jasper-2024-11-03/geo-watch-Jasper-2024-11-03.gif)
 
 </details>
 
@@ -193,7 +193,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/geo-watch-2024-10-27-16-17-36-12059/geo-watch-2024-10-27-16-17-36-12059-4X.gif?raw=true&random=gpp026dxv4myge5u)](TBA/geo-watch-2024-10-27-16-17-36-12059/geo-watch-2024-10-27-16-17-36-12059.gif)
+[![image](TBA/geo-watch-2024-10-27-16-17-36-12059/geo-watch-2024-10-27-16-17-36-12059-4X.gif?raw=true&random=88fuly3bvkdt7zce)](TBA/geo-watch-2024-10-27-16-17-36-12059/geo-watch-2024-10-27-16-17-36-12059.gif)
 
 </details>
 
@@ -209,7 +209,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/geo-watch-2024-09-04-Mount-Etna-a/geo-watch-2024-09-04-Mount-Etna-a-2X.gif?raw=true&random=y6k1uol82u91ovbw)](TBA/geo-watch-2024-09-04-Mount-Etna-a/geo-watch-2024-09-04-Mount-Etna-a.gif)
+[![image](TBA/geo-watch-2024-09-04-Mount-Etna-a/geo-watch-2024-09-04-Mount-Etna-a-2X.gif?raw=true&random=gt6ntlrf7rud94ji)](TBA/geo-watch-2024-09-04-Mount-Etna-a/geo-watch-2024-09-04-Mount-Etna-a.gif)
 
 </details>
 
@@ -220,7 +220,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/Palisades-Sentinel-2-2025-01-15-16-50-38-vyjxu8/Palisades-Sentinel-2-2025-01-15-16-50-38-vyjxu8-2X.gif?raw=true&random=vp667pncdxepd6hd)](TBA/Palisades-Sentinel-2-2025-01-15-16-50-38-vyjxu8/Palisades-Sentinel-2-2025-01-15-16-50-38-vyjxu8.gif)
+[![image](TBA/Palisades-Sentinel-2-2025-01-15-16-50-38-vyjxu8/Palisades-Sentinel-2-2025-01-15-16-50-38-vyjxu8-2X.gif?raw=true&random=144tybv4bdc4e2jf)](TBA/Palisades-Sentinel-2-2025-01-15-16-50-38-vyjxu8/Palisades-Sentinel-2-2025-01-15-16-50-38-vyjxu8.gif)
 
 </details>
 
@@ -231,7 +231,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/Sheerness-20x-2024-12-14-EDkXl0/Sheerness-20x-2024-12-14-EDkXl0-4X.gif?raw=true&random=3j2uwpxyp2z9fhlf)](TBA/Sheerness-20x-2024-12-14-EDkXl0/Sheerness-20x-2024-12-14-EDkXl0.gif)
+[![image](TBA/Sheerness-20x-2024-12-14-EDkXl0/Sheerness-20x-2024-12-14-EDkXl0-4X.gif?raw=true&random=25sbkf2g33mfztbg)](TBA/Sheerness-20x-2024-12-14-EDkXl0/Sheerness-20x-2024-12-14-EDkXl0.gif)
 
 </details>
 
@@ -243,7 +243,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/geo-watch-Silver-Peak-2024-10-12-a/geo-watch-Silver-Peak-2024-10-12-a-4X.gif?raw=true&random=i2gcqcgzyq97ycsz)](TBA/geo-watch-Silver-Peak-2024-10-12-a/geo-watch-Silver-Peak-2024-10-12-a.gif)
+[![image](TBA/geo-watch-Silver-Peak-2024-10-12-a/geo-watch-Silver-Peak-2024-10-12-a-4X.gif?raw=true&random=9i5k81cflqx0k39r)](TBA/geo-watch-Silver-Peak-2024-10-12-a/geo-watch-Silver-Peak-2024-10-12-a.gif)
 
 </details>
 
@@ -254,7 +254,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/bellingcat-2024-09-27-nagorno-karabakh-6X-2024-12-14-EUUpS1/bellingcat-2024-09-27-nagorno-karabakh-6X-2024-12-14-EUUpS1-4X.gif?raw=true&random=vyukdpc4mf8lyilz)](TBA/bellingcat-2024-09-27-nagorno-karabakh-6X-2024-12-14-EUUpS1/bellingcat-2024-09-27-nagorno-karabakh-6X-2024-12-14-EUUpS1.gif)
+[![image](TBA/bellingcat-2024-09-27-nagorno-karabakh-6X-2024-12-14-EUUpS1/bellingcat-2024-09-27-nagorno-karabakh-6X-2024-12-14-EUUpS1-4X.gif?raw=true&random=81vpvn6mzl2i9ujj)](TBA/bellingcat-2024-09-27-nagorno-karabakh-6X-2024-12-14-EUUpS1/bellingcat-2024-09-27-nagorno-karabakh-6X-2024-12-14-EUUpS1.gif)
 
 </details>
 
@@ -270,7 +270,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/geo-watch-2024-09-04-burning-man-2024-a/geo-watch-2024-09-04-burning-man-2024-a-2X.gif?raw=true&random=x5br4el1ubcqe8nd)](TBA/geo-watch-2024-09-04-burning-man-2024-a/geo-watch-2024-09-04-burning-man-2024-a.gif)
+[![image](TBA/geo-watch-2024-09-04-burning-man-2024-a/geo-watch-2024-09-04-burning-man-2024-a-2X.gif?raw=true&random=huzqfirshhoe9ska)](TBA/geo-watch-2024-09-04-burning-man-2024-a/geo-watch-2024-09-04-burning-man-2024-a.gif)
 
 </details>
 
@@ -281,7 +281,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/geo-watch-Chilcotin-2024-11-03/geo-watch-Chilcotin-2024-11-03-4X.gif?raw=true&random=d2dybs8gzhwqz7fy)](TBA/geo-watch-Chilcotin-2024-11-03/geo-watch-Chilcotin-2024-11-03.gif)
+[![image](TBA/geo-watch-Chilcotin-2024-11-03/geo-watch-Chilcotin-2024-11-03-4X.gif?raw=true&random=lowpak1pcwf5m43w)](TBA/geo-watch-Chilcotin-2024-11-03/geo-watch-Chilcotin-2024-11-03.gif)
 
 </details>
 
@@ -297,7 +297,7 @@ watch the planet's story unfold.
 <details>
 <summary>🌐</summary>
 
-[![image](TBA/elkhema-2024-12-15-8EqPXl/elkhema-2024-12-15-8EqPXl-4X.gif?raw=true&random=e9fe2e5y9sndrkqq)](TBA/elkhema-2024-12-15-8EqPXl/elkhema-2024-12-15-8EqPXl.gif)
+[![image](TBA/elkhema-2024-12-15-8EqPXl/elkhema-2024-12-15-8EqPXl-4X.gif?raw=true&random=tbqq8iaw6qu62pej)](TBA/elkhema-2024-12-15-8EqPXl/elkhema-2024-12-15-8EqPXl.gif)
 
 </details>
 

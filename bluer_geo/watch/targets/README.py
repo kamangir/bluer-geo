@@ -55,15 +55,7 @@ def build() -> bool:
                 },
             )
             for target_name in [
-                "DrugSuperLab",
-                "Fagradalsfjall",
-                "Hurricane-Idalia-2023",
-                "Jasper",
-                "Leonardo",
-                "Mount-Etna",
-                "Palisades",
-                "burning-man-2024",
-                "chilcotin-river-landslide",
+                "Miduk",
             ]
         ]
     )
