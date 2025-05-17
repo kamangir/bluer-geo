@@ -101,10 +101,16 @@ watch the planet's story unfold: [targets](./targets.geojson).
 ## example run
 
 ```bash
+@select geo-watch-$(@@timestamp)
 @geo watch - \
   target=Miduk-test - \
-  to=local - - -
+  to=local - - .
+@assets publish \
+	extensions=png+gif,push .
 ```
+
+
+![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-05-17-20-53-04-sti48v/geo-watch-2025-05-17-20-53-04-sti48v.gif?raw=true)
 
 ℹ️ suffix published gif urls with `-2X` and `-4X` for different scales.
 
