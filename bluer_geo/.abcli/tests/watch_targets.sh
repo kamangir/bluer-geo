@@ -4,7 +4,7 @@ function test_bluer_geo_watch_targets_cat() {
     bluer_objects_download - $BLUE_GEO_WATCH_TARGET_LIST
 
     bluer_geo_watch_targets cat \
-        chilcotin-river-landslide-test
+        Miduk
 }
 
 function test_bluer_geo_watch_targets_download() {

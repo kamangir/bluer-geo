@@ -4,7 +4,7 @@ from blueness import module
 from bluer_objects import file, objects
 from bluer_objects.logger.matrix import log_matrix
 from bluer_objects.metadata import post_to_object, get_from_object
-from bluer_flow import fullname as blueflow_fullname
+from bluer_flow import fullname as bluer_flow_fullname
 
 from bluer_geo import fullname
 from bluer_geo import NAME
@@ -101,7 +101,7 @@ def map_function(
         footer=[
             target.one_liner,
             fullname(),
-            blueflow_fullname(),
+            bluer_flow_fullname(),
         ],
         filename=file.add_extension(filename, "png"),
         line_width=line_width,

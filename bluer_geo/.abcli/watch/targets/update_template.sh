@@ -2,7 +2,7 @@
 
 function bluer_geo_watch_targets_update_template() {
     local options=$1
-    local target_name=$(bluer_ai_option "$options" target chilcotin-river-landslide-test)
+    local target_name=$(bluer_ai_option "$options" target Miduk)
     local do_download=$(bluer_ai_option "$options" download 1)
     local do_upload=$(bluer_ai_option "$options" upload 1)
 

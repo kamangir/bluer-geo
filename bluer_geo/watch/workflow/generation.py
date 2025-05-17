@@ -61,7 +61,7 @@ def generate_workflow(
     workflow.G.add_node("reduce")
     workflow.G.nodes["reduce"]["command_line"] = " ".join(
         [
-            "blueflow_workflow monitor",
+            "bluer_flow_workflow monitor",
             "node=reduce",
             job_name,
             "bluer_geo_watch_reduce",
@@ -81,7 +81,7 @@ def generate_workflow(
 
         workflow.G.nodes[node]["command_line"] = " ".join(
             [
-                "blueflow_workflow monitor",
+                "bluer_flow_workflow monitor",
                 f"node={node}",
                 job_name,
                 "bluer_geo_watch_map",

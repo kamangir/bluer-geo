@@ -1,6 +1,6 @@
 # 🌐 `@geo watch`
 
-watch the planet's story unfold.
+watch the planet's story unfold: [targets](./targets.geojson).
 
 
 ```bash
@@ -13,26 +13,20 @@ help::: bluer_geo watch
 
 </details>
 
-
-
-## targets 🎯
-
-- [`targets.geojson`](./targets.geojson)
-- list of targets: [bluer-geo-target-list-v1.tar.gz](https://kamangir-public.s3.ca-central-1.amazonaws.com/bluer-geo-target-list-v1.tar.gz)
-- template: [bluer_geo_watch_template_v1.tar.gz](https://kamangir-public.s3.ca-central-1.amazonaws.com/bluer_geo_watch_template_v1.tar.gz)
-
 ## example run
 
 ```bash
-@geo watch \
-  batch \
-  target=elkhema-2024 - \
-  to=aws_batch - \
-  publish \
-  geo-watch-elkhema-2024-2024-10-05-a-b
+@select geo-watch-$(@@timestamp)
+@geo watch - \
+  target=Miduk-test - \
+  to=local - - .
+@assets publish \
+	extensions=png+gif,push .
 ```
 
-[dev notes](https://arash-kamangir.medium.com/%EF%B8%8F-conversations-with-ai-252-2118326b1de2).
+set:::object_name geo-watch-2025-05-17-20-53-04-sti48v
+
+assets:::get:::object_name/get:::object_name.gif
 
 --scale-note--
 

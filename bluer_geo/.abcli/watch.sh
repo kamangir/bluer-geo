@@ -70,7 +70,7 @@ function bluer_geo_watch() {
     [[ "$do_submit" == 0 ]] && return 0
 
     bluer_ai_eval dryrun=$do_dryrun \
-        blueflow_workflow_submit \
+        bluer_flow_workflow_submit \
         ~download,$workflow_options \
         $job_name
 }

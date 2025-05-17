@@ -14,14 +14,8 @@ from bluer_geo.help.watch.targets import help_functions as help_targets
 def help_(
     tokens: List[str],
     mono: bool,
-    help_batch: bool = False,
 ) -> str:
-    options = "".join(
-        [
-            "batch",
-            xtra(",dryrun,name=<job-name>", mono),
-        ]
-    )
+    options = xtra("dryrun", mono)
 
     target_list = TargetList()
 
@@ -53,9 +47,7 @@ def help_(
     reduce_options = "".join(
         [
             "content=<0.5>",
-            xtra(",dryrun,~gif,", mono),
-            "publish",
-            xtra(",<reduce-options>", mono=mono),
+            xtra(",dryrun,~gif,<reduce-options>", mono=mono),
         ]
     )
 
@@ -63,7 +55,7 @@ def help_(
         [
             "@geo",
             "watch",
-            options if help_batch else f"[{options}]",
+            f"[{options}]",
             f"[{target_options}]",
             f"[{algo_options}]",
             f"[{workflow_options}]",
@@ -71,7 +63,7 @@ def help_(
             f"[{reduce_options}]",
             "[-|<object-name>]",
         ],
-        "watch target -{}> <object-name>.".format("aws-batch-" if help_batch else ""),
+        "watch target -> <object-name>.",
         {
             "algo: diff | modality": [],
             "<algo-options>:": [
@@ -83,17 +75,6 @@ def help_(
             "target: {}".format(" | ".join(target_list.get_list())): [],
         },
         mono=mono,
-    )
-
-
-def help_batch(
-    tokens: List[str],
-    mono: bool,
-) -> str:
-    return help_(
-        tokens=tokens,
-        mono=mono,
-        help_batch=True,
     )
 
 
@@ -178,7 +159,6 @@ def help_reduce(
 
 help_functions = {
     "": help_,
-    "batch": help_batch,
     "map": help_map,
     "query": help_query,
     "reduce": help_reduce,

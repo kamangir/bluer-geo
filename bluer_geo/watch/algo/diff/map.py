@@ -8,7 +8,7 @@ from bluer_options import string
 from bluer_objects.logger.matrix import log_matrix, log_matrix_hist
 from bluer_objects import file, objects
 from bluer_objects.metadata import post_to_object
-from bluer_flow import fullname as blueflow_fullname
+from bluer_flow import fullname as bluer_flow_fullname
 
 from bluer_geo import fullname
 from bluer_geo import NAME
@@ -188,7 +188,7 @@ def map_function(
             footer=[
                 target.one_liner,
                 fullname(),
-                blueflow_fullname(),
+                bluer_flow_fullname(),
             ],
             filename=diff_filename,
             dynamic_range=(-dynamic_range, dynamic_range),

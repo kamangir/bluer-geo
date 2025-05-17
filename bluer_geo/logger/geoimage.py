@@ -6,7 +6,7 @@ from blueness import module
 from bluer_options import string
 from bluer_objects import file, objects
 from bluer_objects.logger.matrix import log_matrix
-from bluer_flow import fullname as blueflow_fullname
+from bluer_flow import fullname as bluer_flow_fullname
 
 from bluer_geo import fullname
 from bluer_geo.file.load import load_geoimage
@@ -88,7 +88,7 @@ def log_geoimage(
         + header,
         footer=[
             fullname(),
-            blueflow_fullname(),
+            bluer_flow_fullname(),
         ]
         + footer,
         colormap=colormap,
