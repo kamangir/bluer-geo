@@ -12,7 +12,7 @@ watch the planet's story unfold.
 ```bash
 @geo \
 	watch \
-	[batch,dryrun,name=<job-name>] \
+	[dryrun] \
 	[<query-object-name> | target=<target>] \
 	[algo=<algo>,<algo-options>] \
 	[~submit | dryrun,to=<runner>] \
@@ -20,23 +20,6 @@ watch the planet's story unfold.
 	[content=<0.5>,dryrun,~gif,publish,<reduce-options>] \
 	[-|<object-name>]
  . watch target -> <object-name>.
-   algo: diff | modality
-   <algo-options>:
-      diff: modality=<modality>,range=<100.0>
-      modality: modality=<modality>
-   modality: rgb[@<keyword>]
-   runner: generic | local
-   target: Miduk | Miduk-test
-@geo \
-	watch \
-	batch,dryrun,name=<job-name> \
-	[<query-object-name> | target=<target>] \
-	[algo=<algo>,<algo-options>] \
-	[~submit | dryrun,to=<runner>] \
-	[dryrun,<map-options>] \
-	[content=<0.5>,dryrun,~gif,publish,<reduce-options>] \
-	[-|<object-name>]
- . watch target -aws-batch-> <object-name>.
    algo: diff | modality
    <algo-options>:
       diff: modality=<modality>,range=<100.0>
@@ -116,7 +99,6 @@ watch the planet's story unfold.
 </details>
 
 
-
 ## targets 🎯
 
 - [`targets.geojson`](./targets.geojson)
@@ -126,15 +108,11 @@ watch the planet's story unfold.
 ## example run
 
 ```bash
-@geo watch \
-  batch \
-  target=elkhema-2024 - \
-  to=aws_batch - \
-  publish \
-  geo-watch-elkhema-2024-2024-10-05-a-b
+@geo watch - \
+  target=Miduk-test - \
+  to=local - \
+  publish -
 ```
-
-[dev notes](https://arash-kamangir.medium.com/%EF%B8%8F-conversations-with-ai-252-2118326b1de2).
 
 ℹ️ suffix published gif urls with `-2X` and `-4X` for different scales. example: [1X](TBA/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b.gif), [2X](TBA/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b-2X.gif), [4X](TBA/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b-4X.gif).
 

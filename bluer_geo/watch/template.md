@@ -14,7 +14,6 @@ help::: bluer_geo watch
 </details>
 
 
-
 ## targets 🎯
 
 - [`targets.geojson`](./targets.geojson)
@@ -24,15 +23,11 @@ help::: bluer_geo watch
 ## example run
 
 ```bash
-@geo watch \
-  batch \
-  target=elkhema-2024 - \
-  to=aws_batch - \
-  publish \
-  geo-watch-elkhema-2024-2024-10-05-a-b
+@geo watch - \
+  target=Miduk-test - \
+  to=local - \
+  publish -
 ```
-
-[dev notes](https://arash-kamangir.medium.com/%EF%B8%8F-conversations-with-ai-252-2118326b1de2).
 
 --scale-note--
 
