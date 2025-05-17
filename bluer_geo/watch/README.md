@@ -26,7 +26,7 @@ watch the planet's story unfold.
       modality: modality=<modality>
    modality: rgb[@<keyword>]
    runner: generic | local
-   target: Miduk
+   target: Miduk | Miduk-test
 @geo \
 	watch \
 	batch,dryrun,name=<job-name> \
@@ -43,7 +43,7 @@ watch the planet's story unfold.
       modality: modality=<modality>
    modality: rgb[@<keyword>]
    runner: generic | local
-   target: Miduk
+   target: Miduk | Miduk-test
 @geo \
 	watch \
 	map \
