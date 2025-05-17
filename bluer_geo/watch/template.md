@@ -18,8 +18,7 @@ help::: bluer_geo watch
 ```bash
 @geo watch - \
   target=Miduk-test - \
-  to=local - \
-  publish -
+  to=local - - -
 ```
 
 --scale-note--

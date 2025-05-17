@@ -47,9 +47,7 @@ def help_(
     reduce_options = "".join(
         [
             "content=<0.5>",
-            xtra(",dryrun,~gif,", mono),
-            "publish",
-            xtra(",<reduce-options>", mono=mono),
+            xtra(",dryrun,~gif,<reduce-options>", mono=mono),
         ]
     )
 

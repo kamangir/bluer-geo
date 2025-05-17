@@ -17,7 +17,7 @@ watch the planet's story unfold: [targets](./targets.geojson).
 	[algo=<algo>,<algo-options>] \
 	[~submit | dryrun,to=<runner>] \
 	[dryrun,<map-options>] \
-	[content=<0.5>,dryrun,~gif,publish,<reduce-options>] \
+	[content=<0.5>,dryrun,~gif,<reduce-options>] \
 	[-|<object-name>]
  . watch target -> <object-name>.
    algo: diff | modality
@@ -103,8 +103,7 @@ watch the planet's story unfold: [targets](./targets.geojson).
 ```bash
 @geo watch - \
   target=Miduk-test - \
-  to=local - \
-  publish -
+  to=local - - -
 ```
 
 ℹ️ suffix published gif urls with `-2X` and `-4X` for different scales.
