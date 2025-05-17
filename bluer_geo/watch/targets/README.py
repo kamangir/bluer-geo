@@ -4,10 +4,8 @@ from bluer_options.help.functions import get_help
 from bluer_objects import file, README
 
 from bluer_geo import NAME, VERSION, ICON, REPO_NAME
-from bluer_geo.watch.targets import jasper
 from bluer_geo.help.functions import help_functions
 from bluer_geo.watch.targets.target_list import TargetList
-from bluer_geo.logger import logger
 
 
 def build() -> bool:
@@ -35,8 +33,8 @@ def build() -> bool:
         for suffix, items, cols, macros, in [
             (
                 f"{target_name}.md",
-                jasper.items if target_name == "Jasper" else [],
-                len(jasper.list_of_dates) if target_name == "Jasper" else 3,
+                [],
+                3,
                 {
                     "--footer--": [
                         "---",

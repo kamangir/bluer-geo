@@ -32,14 +32,15 @@ the `copernicus` catalog covers [Copernicus Data Space Ecosystem - Europe's eyes
    scope: @datacube ingest help.
 ```
 
-## case study: Chilcotin River Landslide
+## case study: Miduk copper mine
 
-![image](https://github.com/kamangir/assets/blob/main/blue-geo/chilcotin-river-landslide-2.jpg?raw=true)
+🚧 image
 
+ - [Google Maps](https://maps.app.goo.gl/vaVBoDgci6kJP2KEA): `lat: 30.4167"N`, `lon: 55.1667"E`.
 
 ---
 
-using [chilcotin-river-landslide](../../watch/targets/md/chilcotin-river-landslide.md).
+using [Miduk](../../watch/targets/md/Miduk.md).
 
 ## example run
 

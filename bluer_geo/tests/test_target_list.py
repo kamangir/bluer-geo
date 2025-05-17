@@ -5,17 +5,15 @@ from bluer_geo.watch.targets.target import Target
 from bluer_geo.watch.targets.target_list import TargetList
 
 
-@pytest.mark.skip(reason="target list is empty")
 @pytest.fixture
 def target_list():
     return TargetList(download=True)
 
 
-@pytest.mark.skip(reason="target list is empty")
 @pytest.mark.parametrize(
     ["catalog_name", "collection", "expected_target"],
     [
-        ["copernicus", "sentinel_2", "chilcotin-river-landslide"],
+        ["copernicus", "sentinel_2", "Miduk"],
     ],
 )
 def test_target_list(
@@ -40,14 +38,13 @@ def test_target_list(
     assert expected_target in list_of_targets
 
 
-@pytest.mark.skip(reason="target list is empty")
 def test_target_list_load(target_list: TargetList):
     assert target_list.list_of_targets
 
     for target in target_list.list_of_targets.values():
         assert isinstance(target, Target)
 
-    for target in ["chilcotin-river-landslide", "elkhema"]:
+    for target in ["Miduk"]:
         assert target in target_list.list_of_targets
 
 
@@ -55,22 +52,22 @@ def test_target_list_load(target_list: TargetList):
 def test_target_list_get(
     target_list: TargetList,
 ):
-    target = target_list.get("bellingcat-2024-09-27-nagorno-karabakh")
-    assert target.query_args["datetime"] == "2024-05-01/2024-09-01"
+    target = target_list.get("Miduk")
+    assert target.query_args["datetime"] == "2024-05-01/2025-05-01"
 
     target = target_list.get(
-        "bellingcat-2024-09-27-nagorno-karabakh-test",
+        "Miduk-test",
         including_versions=False,
     )
     assert not "count" in target.query_args
 
-    target = target_list.get("bellingcat-2024-09-27-nagorno-karabakh-void")
+    target = target_list.get("Miduk-void")
     assert not "count" in target.query_args
 
-    target = target_list.get("bellingcat-2024-09-27-nagorno-karabakh")
+    target = target_list.get("Miduk")
     assert target.query_args["count"] == 30
 
-    target = target_list.get("bellingcat-2024-09-27-nagorno-karabakh-test")
+    target = target_list.get("Miduk-test")
     assert target.query_args["count"] == 2
 
 

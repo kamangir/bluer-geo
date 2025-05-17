@@ -60,13 +60,10 @@ function test_bluer_geo_watch_targets_get_exists() {
 function test_bluer_geo_watch_targets_get_query_args() {
     bluer_objects_download - $BLUE_GEO_WATCH_TARGET_LIST
 
-    bluer_ai_log_warning "disabled, tracked in https://github.com/kamangir/bluer-geo/issues/2".
-    return 0
-
     bluer_ai_assert \
         $(bluer_geo_watch_targets get \
             --what query_args \
-            --target_name chilcotin-river-landslide \
+            --target_name Miduk \
             --log 0 \
             --delim +) \
         sentinel_2

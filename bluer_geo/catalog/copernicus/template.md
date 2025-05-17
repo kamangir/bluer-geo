@@ -15,7 +15,7 @@ the `copernicus` catalog covers [Copernicus Data Space Ecosystem - Europe's eyes
 ```
 help::: bluer_geo catalog query copernicus sentinel_2
 
---include-- ../../watch/targets/md/chilcotin-river-landslide.md case study: Chilcotin River Landslide
+--include-- ../../watch/targets/md/Miduk.md case study: Miduk copper mine
 
 ## example run
 

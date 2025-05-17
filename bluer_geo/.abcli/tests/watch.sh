@@ -6,7 +6,7 @@ function test_bluer_geo_watch() {
     bluer_ai_log_warning "disabled, tracked in https://github.com/kamangir/bluer-geo/issues/2".
     return 0
 
-    local list_of_targets=$(bluer_ai_option "$options" target chilcotin-river-landslide-test)
+    local list_of_targets=$(bluer_ai_option "$options" target Miduk)
     local list_of_algo=$(bluer_ai_option "$options" algo modality+diff)
 
     local algo
