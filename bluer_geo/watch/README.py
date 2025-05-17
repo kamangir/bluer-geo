@@ -82,22 +82,8 @@ for target_name in sorted(list_of_targets.keys()):
 
     items += [""]
 
-object_name = "geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b"
 macros: Dict[str, str] = {
     "--scale-note--": [
-        "ℹ️ suffix published gif urls with `-2X` and `-4X` for different scales. example: {}.".format(
-            ", ".join(
-                [
-                    "[{}X]({}/{}/{}{}.gif)".format(
-                        scale,
-                        "TBA",
-                        object_name,
-                        object_name,
-                        "" if scale == 1 else f"-{scale}X",
-                    )
-                    for scale in [1, 2, 4]
-                ]
-            )
-        )
+        "ℹ️ suffix published gif urls with `-2X` and `-4X` for different scales."
     ]
 }

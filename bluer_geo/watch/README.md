@@ -114,7 +114,7 @@ watch the planet's story unfold.
   publish -
 ```
 
-ℹ️ suffix published gif urls with `-2X` and `-4X` for different scales. example: [1X](TBA/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b.gif), [2X](TBA/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b-2X.gif), [4X](TBA/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b/geo-watch-bellingcat-2024-09-27-nagorno-karabakh-6X-2024-10-05-b-4X.gif).
+ℹ️ suffix published gif urls with `-2X` and `-4X` for different scales.
 
 ## [`Miduk`](./targets/md/Miduk.md)
  - [Google Maps](https://maps.app.goo.gl/vaVBoDgci6kJP2KEA): `lat: 30.4167"N`, `lon: 55.1667"E`.
