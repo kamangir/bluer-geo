@@ -5,9 +5,6 @@ function test_bluer_geo_catalog_query() {
     local list_of_catalogs=$(echo $bluer_geo_list_of_catalogs | tr , +)
     list_of_catalogs=$(bluer_ai_option "$options" catalog $list_of_catalogs)
 
-    bluer_ai_log_warning "disabled, tracked in https://github.com/kamangir/bluer-geo/issues/2".
-    return 0
-
     bluer_geo_watch_targets_download
 
     local catalog

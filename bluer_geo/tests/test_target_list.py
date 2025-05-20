@@ -48,12 +48,11 @@ def test_target_list_load(target_list: TargetList):
         assert target in target_list.list_of_targets
 
 
-@pytest.mark.skip(reason="target list is empty")
 def test_target_list_get(
     target_list: TargetList,
 ):
     target = target_list.get("Miduk")
-    assert target.query_args["datetime"] == "2024-05-01/2025-05-01"
+    assert target.query_args["datetime"] == "2025-03-01/2025-05-01"
 
     target = target_list.get(
         "Miduk-test",
@@ -71,7 +70,6 @@ def test_target_list_get(
     assert target.query_args["count"] == 2
 
 
-@pytest.mark.skip(reason="target list is empty")
 def test_target_list_save(
     target_list: TargetList,
 ):
@@ -87,12 +85,11 @@ def test_target_list_save(
     )
 
 
-@pytest.mark.skip(reason="target list is empty")
 @pytest.mark.parametrize(
     ["catalog_name"],
     [
         [""],
-        ["maxar_open_data"],
+        ["copernicus"],
     ],
 )
 def test_target_list_for_catalog(
