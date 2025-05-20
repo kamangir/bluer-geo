@@ -4,7 +4,7 @@ ICON = "🌐"
 
 DESCRIPTION = f"{ICON} AI for a Blue Planet."
 
-VERSION = "5.53.1"
+VERSION = "5.54.1"
 
 REPO_NAME = "bluer-geo"
 
