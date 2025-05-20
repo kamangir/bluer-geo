@@ -7,10 +7,9 @@ from bluer_geo.tests.test_target_list import target_list
 from bluer_geo.watch.targets import TargetList, Target
 
 
-@pytest.mark.skip(reason="target list is empty")
 @pytest.mark.parametrize(
     ["target_name"],
-    [["elkhema"]],
+    [["Miduk"]],
 )
 def test_target(
     target_list: TargetList,
