@@ -41,11 +41,11 @@ function bluer_geo_watch() {
 
     local job_name="$object_name-job-$(bluer_ai_string_timestamp_short)"
 
-    bluer_ai_mlflow_tags_set $object_name job=$job_name
+    bluer_objects_mlflow_tags_set $object_name job=$job_name
 
     bluer_ai_log "🌐 @geo: watch: $query_object_name: -[ $workflow_options @ $map_options + $reduce_options @ $job_name]-> $object_name"
 
-    bluer_ai_clone \
+    bluer_objects_clone \
         upload \
         $BLUE_GEO_QGIS_TEMPLATE_WATCH \
         $object_name
