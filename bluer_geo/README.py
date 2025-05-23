@@ -74,7 +74,10 @@ items = README.Items(
 
 def build() -> bool:
     return (
-        all(
+        build_catalog()
+        and build_targets()
+        and build_objects()
+        and all(
             README.build(
                 items=items,
                 cols=cols,
@@ -98,7 +101,4 @@ def build() -> bool:
                 ("QGIS", [], -1, {}),
             ]
         )
-        and build_catalog()
-        and build_targets()
-        and build_objects()
     )
