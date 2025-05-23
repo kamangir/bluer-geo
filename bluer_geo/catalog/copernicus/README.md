@@ -34,8 +34,19 @@ the `copernicus` catalog covers [Copernicus Data Space Ecosystem - Europe's eyes
 
 ## case study: Miduk copper mine
 
+```bash
+@select geo-watch-$(@@timestamp)
+@geo watch - \
+  target=Miduk-2 - \
+  to=local - - .
+@assets publish \
+  extensions=png+gif,push .
+```
 
-![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-05-23-2ck64x/geo-watch-2025-05-23-2ck64x.gif?raw=true)
+
+| | |
+|-|-|
+| ![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-05-23-2ck64x/geo-watch-2025-05-23-2ck64x.gif?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-05-23-2ck64x_diff/geo-watch-2025-05-23-2ck64x_diff.gif?raw=true) |
 
  - [Google Maps](https://maps.app.goo.gl/vaVBoDgci6kJP2KEA): `lat: 30.4167"N`, `lon: 55.1667"E`.
 
