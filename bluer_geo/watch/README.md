@@ -26,7 +26,7 @@ watch the planet's story unfold: [targets](./targets.geojson).
       modality: modality=<modality>
    modality: rgb[@<keyword>]
    runner: generic | local
-   target: Miduk | Miduk-test
+   target: Miduk | Miduk-3 | Miduk-5 | Miduk-test
 @geo \
 	watch \
 	map \
@@ -103,14 +103,14 @@ watch the planet's story unfold: [targets](./targets.geojson).
 ```bash
 @select geo-watch-$(@@timestamp)
 @geo watch - \
-  target=Miduk-test - \
+  target=Miduk-3 - \
   to=local - - .
 @assets publish \
 	extensions=png+gif,push .
 ```
 
 
-![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-05-17-20-53-04-sti48v/geo-watch-2025-05-17-20-53-04-sti48v.gif?raw=true)
+![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-05-23-1agoh4/geo-watch-2025-05-23-1agoh4.gif?raw=true)
 
 ℹ️ suffix published gif urls with `-2X` and `-4X` for different scales.
 

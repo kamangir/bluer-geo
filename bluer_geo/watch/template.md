@@ -18,13 +18,13 @@ help::: bluer_geo watch
 ```bash
 @select geo-watch-$(@@timestamp)
 @geo watch - \
-  target=Miduk-test - \
+  target=Miduk-3 - \
   to=local - - .
 @assets publish \
 	extensions=png+gif,push .
 ```
 
-set:::object_name geo-watch-2025-05-17-20-53-04-sti48v
+set:::object_name geo-watch-2025-05-23-1agoh4
 
 assets:::get:::object_name/get:::object_name.gif
 
