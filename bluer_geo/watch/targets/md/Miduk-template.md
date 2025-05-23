@@ -14,7 +14,7 @@ set:::object_name_diff geo-watch-diff-2025-05-23-2j8p1f
 
 | | |
 |-|-|
-| assets:::get:::object_name/get:::object_name.gif | assets:::get:::object_name_diff/get:::object_name_diff.gif |
+| assets:::get:::object_name/get:::object_name-2X.gif | assets:::get:::object_name_diff/get:::object_name_diff-2X.gif |
 
 --urls--
 
