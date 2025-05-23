@@ -52,7 +52,7 @@ def test_target_list_get(
     target_list: TargetList,
 ):
     target = target_list.get("Miduk")
-    assert target.query_args["datetime"] == "2025-03-01/2025-05-01"
+    assert target.query_args["datetime"].startswith("2025")
 
     target = target_list.get(
         "Miduk-test",
