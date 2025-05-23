@@ -110,7 +110,7 @@ watch the planet's story unfold: [targets](./targets.geojson).
 ```
 
 
-![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-05-23-1agoh4/geo-watch-2025-05-23-1agoh4.gif?raw=true)
+![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-05-23-dbpk6n/geo-watch-2025-05-23-dbpk6n.gif?raw=true)
 
 ℹ️ suffix published gif urls with `-2X` and `-4X` for different scales.
 
