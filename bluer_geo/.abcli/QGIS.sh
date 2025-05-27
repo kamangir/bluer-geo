@@ -20,11 +20,6 @@ function bluer_geo_QGIS() {
         return
     fi
 
-    if [ "$task" == "seed" ]; then
-        bluer_ai_seed QGIS "${@:2}"
-        return
-    fi
-
     bluer_ai_log_error "QGIS: $task: command not found."
     return 1
 }
