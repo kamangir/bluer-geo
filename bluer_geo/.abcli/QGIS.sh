@@ -11,23 +11,12 @@ export BLUE_GEO_QGIS_TEMPLATES_OBJECT_NAME=QGIS-templates-v1
 
 mkdir -p $BLUE_GEO_QGIS_PATH_SERVER
 
-# internal function to bluer_ai_seed.
-function bluer_ai_seed_QGIS() {
-    # seed is NOT local
-    seed=$(python3 -m bluer_geo.QGIS generate_seed)
-}
-
 function bluer_geo_QGIS() {
     local task=$1
 
     local function_name=bluer_geo_QGIS_$task
     if [[ $(type -t $function_name) == "function" ]]; then
         $function_name "${@:2}"
-        return
-    fi
-
-    if [ "$task" == "seed" ]; then
-        bluer_ai_seed QGIS "${@:2}"
         return
     fi
 
