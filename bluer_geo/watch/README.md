@@ -114,9 +114,6 @@ watch the planet's story unfold: [targets](./targets.geojson).
 |-|-|
 | ![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-05-23-2ck64x/geo-watch-2025-05-23-2ck64x.gif?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/geo-watch-diff-2025-05-23-2j8p1f/geo-watch-diff-2025-05-23-2j8p1f.gif?raw=true) |
 
-Also see:
-- [Miduk-5](./Miduk-5.md)
-
  - [Google Maps](https://maps.app.goo.gl/vaVBoDgci6kJP2KEA): `lat: 30.4167"N`, `lon: 55.1667"E`.
 
 ---
