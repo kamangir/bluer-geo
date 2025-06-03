@@ -25,7 +25,7 @@ watch the planet's story unfold: [targets](./targets.geojson).
       diff: modality=<modality>,range=<100.0>
       modality: modality=<modality>
    modality: rgb[@<keyword>]
-   runner: generic | local
+   runner: generic | local | localflow
    target: Miduk | Miduk-2 | Miduk-3 | Miduk-5 | Miduk-test
 @geo \
 	watch \
