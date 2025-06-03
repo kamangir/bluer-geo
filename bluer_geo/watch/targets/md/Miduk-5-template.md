@@ -6,13 +6,9 @@
   target=Miduk-5 - \
   to=localflow - - .
 
-🎰
-
 @assets publish \
   download,extensions=gif,push .
 ```
-
-🔥
 
 ```bash
 @select geo-watch-diff-$(@@timestamp)
@@ -20,16 +16,14 @@
   target=Miduk-5 algo=diff \
   to=localflow - - .
 
-🎰
-
 @assets publish \
-  download,extensions=push .
+  download,extensions=gif,push .
 ```
 
-🚧
+🔥
 
 set:::object5_name geo-watch-2025-06-03-ghm6t0
-set:::object5_diff_name geo-watch-diff-2025-06-03-6bg1x1
+set:::object5_diff_name geo-watch-diff-2025-06-03-7v1z3v
 
 | | |
 |-|-|
