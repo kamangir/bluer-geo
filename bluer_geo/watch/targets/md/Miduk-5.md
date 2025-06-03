@@ -20,8 +20,6 @@
   download,extensions=gif,push .
 ```
 
-🔥
-
 
 | | |
 |-|-|
