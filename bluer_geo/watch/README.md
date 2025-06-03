@@ -25,7 +25,7 @@ watch the planet's story unfold: [targets](./targets.geojson).
       diff: modality=<modality>,range=<100.0>
       modality: modality=<modality>
    modality: rgb[@<keyword>]
-   runner: generic | local
+   runner: generic | local | localflow
    target: Miduk | Miduk-2 | Miduk-3 | Miduk-5 | Miduk-test
 @geo \
 	watch \
@@ -113,6 +113,41 @@ watch the planet's story unfold: [targets](./targets.geojson).
 | | |
 |-|-|
 | ![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-05-23-2ck64x/geo-watch-2025-05-23-2ck64x.gif?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/geo-watch-diff-2025-05-23-2j8p1f/geo-watch-diff-2025-05-23-2j8p1f.gif?raw=true) |
+
+# Miduk-5
+
+```bash
+@select geo-watch-$(@@timestamp)
+@geo watch - \
+  target=Miduk-5 - \
+  to=localflow - - .
+
+🎰
+
+@assets publish \
+  download,extensions=gif,push .
+```
+
+🔥
+
+```bash
+@select geo-watch-diff-$(@@timestamp)
+@geo watch - \
+  target=Miduk-5 algo=diff \
+  to=localflow - - .
+
+🎰
+
+@assets publish \
+  download,extensions=push .
+```
+
+🚧
+
+
+| | |
+|-|-|
+| ![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-06-03-ghm6t0/geo-watch-2025-06-03-ghm6t0.gif?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/geo-watch-diff-2025-06-03-6bg1x1/geo-watch-diff-2025-06-03-6bg1x1.gif?raw=true) |
 
  - [Google Maps](https://maps.app.goo.gl/vaVBoDgci6kJP2KEA): `lat: 30.4167"N`, `lon: 55.1667"E`.
 
