@@ -16,6 +16,9 @@ set:::object_diff_name geo-watch-diff-2025-05-23-2j8p1f
 |-|-|
 | assets:::get:::object_name/get:::object_name.gif | assets:::get:::object_diff_name/get:::object_diff_name.gif |
 
+Also see:
+- [Miduk-5](./Miduk-5.md)
+
 --urls--
 
 --footer--
