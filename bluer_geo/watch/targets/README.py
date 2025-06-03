@@ -54,6 +54,7 @@ def build() -> bool:
             )
             for target_name in [
                 "Miduk",
+                "Miduk-5",
             ]
         ]
     )
