@@ -1,5 +1,6 @@
 import os
 
+from bluer_options import env
 from bluer_objects import file, README
 from bluer_options.help.functions import get_help
 
@@ -29,9 +30,15 @@ def build() -> bool:
             (catalog, {"--urls--": get_catalog(catalog).urls_as_str()})
             for catalog in [
                 "copernicus",
-                "maxar_open_data",
                 "firms",
-                "ukraine_timemap",
             ]
+            + (
+                []
+                if env.INTERNET_IS_NATIONAL
+                else [
+                    "maxar_open_data",
+                    "ukraine_timemap",
+                ]
+            )
         ]
     )
