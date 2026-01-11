@@ -33,12 +33,12 @@ def build() -> bool:
                 "firms",
             ]
             + (
-                []
-                if env.INTERNET_IS_NATIONAL
-                else [
+                [
                     "maxar_open_data",
                     "ukraine_timemap",
                 ]
+                if env.BLUER_AI_WEB_STATUS == "online"
+                else []
             )
         ]
     )

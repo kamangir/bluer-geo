@@ -14,7 +14,7 @@ from bluer_geo.catalog.copernicus import CopernicusCatalog, CopernicusSentinel2D
 from bluer_geo.catalog.firms import FirmsCatalog
 from bluer_geo.catalog.firms.area import FirmsAreaDatacube
 
-if not env.INTERNET_IS_NATIONAL:
+if env.BLUER_AI_WEB_STATUS == "online":
     from bluer_geo.catalog.maxar_open_data import (
         MaxarOpenDataCatalog,
         MaxarOpenDataDatacube,
@@ -24,14 +24,17 @@ if not env.INTERNET_IS_NATIONAL:
         UkraineTimemapDatacube,
     )
 
-list_of_catalog_classes: List[Type[GenericCatalog]] = [GenericCatalog, FirmsCatalog] + (
-    []
-    if env.INTERNET_IS_NATIONAL
-    else [
+list_of_catalog_classes: List[Type[GenericCatalog]] = [
+    GenericCatalog,
+    FirmsCatalog,
+] + (
+    [
         CopernicusCatalog,
         MaxarOpenDataCatalog,
         UkraineTimemapCatalog,
     ]
+    if env.BLUER_AI_WEB_STATUS == "online"
+    else []
 )
 
 list_of_catalogs: List[str] = sorted(
@@ -48,11 +51,11 @@ list_of_datacube_classes: List[Type[GenericDatacube]] = [
     GenericDatacube,
     FirmsAreaDatacube,
 ] + (
-    []
-    if env.INTERNET_IS_NATIONAL
-    else [
+    [
         UkraineTimemapDatacube,
         CopernicusSentinel2Datacube,
         MaxarOpenDataDatacube,
     ]
+    if env.BLUER_AI_WEB_STATUS == "online"
+    else []
 )
