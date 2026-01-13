@@ -23,7 +23,7 @@
 
 | | |
 |-|-|
-| ![image](https://github.com/kamangir/assets/blob/main/geo-watch-2025-06-03-ghm6t0/geo-watch-2025-06-03-ghm6t0.gif?raw=true) | ![image](https://github.com/kamangir/assets/blob/main/geo-watch-diff-2025-06-03-7v1z3v/geo-watch-diff-2025-06-03-7v1z3v.gif?raw=true) |
+| ![image](../../../../../assets/geo-watch-2025-06-03-ghm6t0/geo-watch-2025-06-03-ghm6t0.gif?raw=true) | ![image](../../../../../assets/geo-watch-diff-2025-06-03-7v1z3v/geo-watch-diff-2025-06-03-7v1z3v.gif?raw=true) |
 
  - [Google Maps](https://maps.app.goo.gl/vaVBoDgci6kJP2KEA): `lat: 30.4167"N`, `lon: 55.1667"E`.
 
