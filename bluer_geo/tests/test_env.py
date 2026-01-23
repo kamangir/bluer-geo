@@ -43,3 +43,5 @@ def test_bluer_geo_env():
     assert env.BLUE_GEO_FILE_LOAD_GEOIMAGE_TEST_FILENAME
 
     assert env.BLUE_GEO_TEST_OBJECT
+
+    assert isinstance(env.BLUER_GEO_DISABLE_ALL_CATALOGS)

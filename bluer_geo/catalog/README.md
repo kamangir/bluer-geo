@@ -52,7 +52,7 @@ to see the list of pages that can be browsed for a catalog,
 ```bash
 @catalog browse \
 	firms \
-	home|area|map-key
+	keyword
  . browse firms.
 ```
 

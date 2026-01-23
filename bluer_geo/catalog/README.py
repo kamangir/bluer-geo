@@ -1,9 +1,10 @@
 import os
 
-from bluer_options import env
+from bluer_options.env import BLUER_AI_WEB_STATUS
 from bluer_objects import file, README
 from bluer_options.help.functions import get_help
 
+from bluer_geo import env
 from bluer_geo import NAME, VERSION, ICON, REPO_NAME
 from bluer_geo.catalog import get_catalog
 from bluer_geo.help.functions import help_functions
@@ -28,16 +29,22 @@ def build() -> bool:
         )
         for suffix, macros, in [
             (catalog, {"--urls--": get_catalog(catalog).urls_as_str()})
-            for catalog in [
-                "copernicus",
-                "firms",
-            ]
-            + (
-                [
-                    "maxar_open_data",
-                    "ukraine_timemap",
-                ]
-                if env.BLUER_AI_WEB_STATUS == "online"
+            for catalog in (
+                (
+                    [
+                        "copernicus",
+                        "firms",
+                    ]
+                    + (
+                        [
+                            "maxar_open_data",
+                            "ukraine_timemap",
+                        ]
+                        if BLUER_AI_WEB_STATUS == "online"
+                        else []
+                    )
+                )
+                if env.BLUER_GEO_DISABLE_ALL_CATALOGS == 0
                 else []
             )
         ]
