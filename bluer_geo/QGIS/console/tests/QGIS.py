@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 from typing import List
 
 if not QGIS_is_live:

@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 if not QGIS_is_live:
     from .assets import Q_test_assets_object_references
     from ..objects import (

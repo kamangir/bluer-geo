@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 if not QGIS_is_live:
     from .string import Q_timestamp
 

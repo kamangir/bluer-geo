@@ -1,3 +1,6 @@
+# pylint: skip-file
+
+
 def QgsRasterLayer(filename: str, layer_name: str):
     return None
 

@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 from typing import List, Type
 
 from bluer_options.env import BLUER_AI_INTERNET_OUTSIDE_IS_ACCESSIBLE

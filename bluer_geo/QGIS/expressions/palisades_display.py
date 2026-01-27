@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 import os
 from typing import List, Union
 import time

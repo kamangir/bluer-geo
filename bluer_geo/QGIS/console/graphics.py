@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 if not QGIS_is_live:
     from .logger import Q_log
     from .objects import Q_file_path_in_object

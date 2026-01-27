@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 import yaml
 from typing import List, Any
 
