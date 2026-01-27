@@ -109,4 +109,4 @@ graph LR
 
 [![pylint](https://github.com/kamangir/bluer-geo/actions/workflows/pylint.yml/badge.svg)](https://github.com/kamangir/bluer-geo/actions/workflows/pylint.yml) [![pytest](https://github.com/kamangir/bluer-geo/actions/workflows/pytest.yml/badge.svg)](https://github.com/kamangir/bluer-geo/actions/workflows/pytest.yml) [![bashtest](https://github.com/kamangir/bluer-geo/actions/workflows/bashtest.yml/badge.svg)](https://github.com/kamangir/bluer-geo/actions/workflows/bashtest.yml) [![PyPI version](https://img.shields.io/pypi/v/bluer-geo.svg)](https://pypi.org/project/bluer-geo/) [![PyPI - Downloads](https://img.shields.io/pypi/dd/bluer-geo)](https://pypistats.org/packages/bluer-geo)
 
-built by 🌀 [`bluer README`](https://github.com/kamangir/bluer-objects/tree/main/bluer_objects/README), based on 🌐 [`bluer_geo-5.100.1`](https://github.com/kamangir/bluer-geo).
+built by 🌀 [`bluer README`](https://github.com/kamangir/bluer-objects/tree/main/bluer_objects/README), based on 🌐 [`bluer_geo-5.106.1`](https://github.com/kamangir/bluer-geo).

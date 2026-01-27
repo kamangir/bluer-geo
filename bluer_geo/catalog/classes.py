@@ -1,6 +1,6 @@
 from typing import List, Type
 
-from bluer_options.env import BLUER_AI_WEB_STATUS
+from bluer_options.env import BLUER_AI_INTERNET_OUTSIDE_IS_ACCESSIBLE
 
 from bluer_geo import env
 from bluer_geo.catalog.generic import (
@@ -18,7 +18,7 @@ if env.BLUER_GEO_DISABLE_ALL_CATALOGS == 0:
     from bluer_geo.catalog.firms import FirmsCatalog
     from bluer_geo.catalog.firms.area import FirmsAreaDatacube
 
-    if BLUER_AI_WEB_STATUS == "online":
+    if BLUER_AI_INTERNET_OUTSIDE_IS_ACCESSIBLE:
         from bluer_geo.catalog.maxar_open_data import (
             MaxarOpenDataCatalog,
             MaxarOpenDataDatacube,
@@ -42,7 +42,7 @@ list_of_catalog_classes: List[Type[GenericCatalog]] = [
                     MaxarOpenDataCatalog,
                     UkraineTimemapCatalog,
                 ]
-                if BLUER_AI_WEB_STATUS == "online"
+                if BLUER_AI_INTERNET_OUTSIDE_IS_ACCESSIBLE
                 else []
             )
         )
@@ -75,7 +75,7 @@ list_of_datacube_classes: List[Type[GenericDatacube]] = [
                     CopernicusSentinel2Datacube,
                     MaxarOpenDataDatacube,
                 ]
-                if BLUER_AI_WEB_STATUS == "online"
+                if BLUER_AI_INTERNET_OUTSIDE_IS_ACCESSIBLE
                 else []
             )
         )
