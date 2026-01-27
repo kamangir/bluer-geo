@@ -2,7 +2,7 @@ import os
 
 from bluer_objects import file, README
 from bluer_options.help.functions import get_help
-from bluer_options.env import BLUER_AI_INTERNET_OUTSIDE_IS_ACCESSIBLE
+from bluer_options.env import BLUER_AI_WEB_IS_ACCESSIBLE
 
 from bluer_geo import env
 from bluer_geo import NAME, VERSION, ICON, REPO_NAME
@@ -40,7 +40,7 @@ def build() -> bool:
                             "maxar_open_data",
                             "ukraine_timemap",
                         ]
-                        if BLUER_AI_INTERNET_OUTSIDE_IS_ACCESSIBLE
+                        if BLUER_AI_WEB_IS_ACCESSIBLE
                         else []
                     )
                 )
