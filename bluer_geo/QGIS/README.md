@@ -60,6 +60,6 @@ QGIS seed
 
 and paste it in the Python Console in QGIS.
 
-![image](https://github.com/kamangir/assets/blob/main/blue-geo/QGIS-python-console.png?raw=true)
+![image](../../../assets/blue-geo/QGIS-python-console.png?raw=true)
 
 ![image](https://raw.githubusercontent.com/kamangir/assets/main/blue-geo/QGIS.png)
