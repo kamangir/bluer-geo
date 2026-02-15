@@ -6,9 +6,10 @@ from bluer_geo import NAME, VERSION, ICON, REPO_NAME
 from bluer_geo.objects import special_objects
 
 
-def build() -> bool:
+def build(args) -> bool:
     return all(
         README.build(
+            args=args,
             path=os.path.join(
                 file.path(__file__),
                 f"md/{suffix}",

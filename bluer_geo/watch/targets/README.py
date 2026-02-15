@@ -9,13 +9,14 @@ from bluer_geo.help.functions import help_functions
 from bluer_geo.watch.targets.target_list import TargetList
 
 
-def build() -> bool:
+def build(args) -> bool:
     target_list = TargetList(
         download=bool(BLUER_AI_CLOUD_IS_ACCESSIBLE),
     )
 
     return all(
         README.build(
+            args,
             items=items,
             cols=cols,
             path=os.path.join(

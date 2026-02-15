@@ -10,9 +10,10 @@ from bluer_geo.catalog import get_catalog
 from bluer_geo.help.functions import help_functions
 
 
-def build() -> bool:
+def build(args) -> bool:
     return all(
         README.build(
+            args=args,
             items=[],
             cols=3,
             path=os.path.join(file.path(__file__), suffix),
