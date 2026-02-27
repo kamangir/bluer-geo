@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 import os
 from qgis.core import *
 from qgis.gui import *

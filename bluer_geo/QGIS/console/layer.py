@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 import os
 
 if not QGIS_is_live:

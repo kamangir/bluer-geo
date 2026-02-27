@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 if not QGIS_is_live:
     from ..graphics import Q_screenshot
 

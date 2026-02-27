@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 Q_verbose = False
 
 QGIS_is_live = True

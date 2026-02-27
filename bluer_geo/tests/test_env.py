@@ -1,3 +1,4 @@
+from bluer_options.testing.lists import are_01
 from bluer_ai.tests.test_env import test_bluer_ai_env
 from bluer_objects.tests.test_env import test_bluer_objects_env
 
@@ -43,3 +44,9 @@ def test_bluer_geo_env():
     assert env.BLUE_GEO_FILE_LOAD_GEOIMAGE_TEST_FILENAME
 
     assert env.BLUE_GEO_TEST_OBJECT
+
+    assert are_01(
+        [
+            env.BLUER_GEO_DISABLE_ALL_CATALOGS,
+        ]
+    )

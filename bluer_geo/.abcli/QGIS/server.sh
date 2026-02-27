@@ -4,7 +4,7 @@ function bluer_geo_QGIS_server() {
     local prompt="🌐 $(bluer_geo version).QGIS server ... (^C to stop)"
     bluer_ai_log $prompt
 
-    bluer_ai_badge "🌐"
+    bluer_ai_badge - "QGIS server 🌐"
 
     local filename
     cd $BLUE_GEO_QGIS_PATH_SERVER
@@ -22,4 +22,6 @@ function bluer_geo_QGIS_server() {
             fi
         done
     done
+
+    bluer_ai_badge reset
 }

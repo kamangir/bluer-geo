@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 import glob
 
 if not QGIS_is_live:

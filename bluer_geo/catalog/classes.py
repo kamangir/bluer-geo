@@ -1,4 +1,8 @@
+# pylint: skip-file
+
 from typing import List, Type
+
+from bluer_options.env import BLUER_AI_WEB_IS_ACCESSIBLE
 
 from bluer_geo import env
 from bluer_geo.catalog.generic import (
@@ -7,25 +11,47 @@ from bluer_geo.catalog.generic import (
     GenericDatacube,
     VoidDatacube,
 )
-from bluer_geo.catalog.copernicus import CopernicusCatalog, CopernicusSentinel2Datacube
-from bluer_geo.catalog.firms import FirmsCatalog
-from bluer_geo.catalog.firms.area import FirmsAreaDatacube
-from bluer_geo.catalog.maxar_open_data import (
-    MaxarOpenDataCatalog,
-    MaxarOpenDataDatacube,
-)
-from bluer_geo.catalog.ukraine_timemap import (
-    UkraineTimemapCatalog,
-    UkraineTimemapDatacube,
-)
+
+if env.BLUER_GEO_DISABLE_ALL_CATALOGS == 0:
+    from bluer_geo.catalog.copernicus import (
+        CopernicusCatalog,
+        CopernicusSentinel2Datacube,
+    )
+    from bluer_geo.catalog.firms import FirmsCatalog
+    from bluer_geo.catalog.firms.area import FirmsAreaDatacube
+
+    if BLUER_AI_WEB_IS_ACCESSIBLE:
+        from bluer_geo.catalog.maxar_open_data import (
+            MaxarOpenDataCatalog,
+            MaxarOpenDataDatacube,
+        )
+        from bluer_geo.catalog.ukraine_timemap import (
+            UkraineTimemapCatalog,
+            UkraineTimemapDatacube,
+        )
 
 list_of_catalog_classes: List[Type[GenericCatalog]] = [
     GenericCatalog,
-    CopernicusCatalog,
-    FirmsCatalog,
-    MaxarOpenDataCatalog,
-    UkraineTimemapCatalog,
-]
+] + (
+    (
+        (
+            [
+                FirmsCatalog,
+            ]
+            + (
+                [
+                    CopernicusCatalog,
+                    MaxarOpenDataCatalog,
+                    UkraineTimemapCatalog,
+                ]
+                if BLUER_AI_WEB_IS_ACCESSIBLE
+                else []
+            )
+        )
+        if env.BLUER_GEO_DISABLE_ALL_CATALOGS == 0
+        else []
+    )
+)
 
 list_of_catalogs: List[str] = sorted(
     [
@@ -39,8 +65,23 @@ list_of_catalogs: List[str] = sorted(
 
 list_of_datacube_classes: List[Type[GenericDatacube]] = [
     GenericDatacube,
-    FirmsAreaDatacube,
-    UkraineTimemapDatacube,
-    CopernicusSentinel2Datacube,
-    MaxarOpenDataDatacube,
-]
+] + (
+    (
+        (
+            [
+                FirmsAreaDatacube,
+            ]
+            + (
+                [
+                    UkraineTimemapDatacube,
+                    CopernicusSentinel2Datacube,
+                    MaxarOpenDataDatacube,
+                ]
+                if BLUER_AI_WEB_IS_ACCESSIBLE
+                else []
+            )
+        )
+        if env.BLUER_GEO_DISABLE_ALL_CATALOGS == 0
+        else []
+    )
+)

@@ -1,6 +1,7 @@
 import os
 
 from bluer_options.help.functions import get_help
+from bluer_options.env import BLUER_AI_CLOUD_IS_ACCESSIBLE
 from bluer_objects import file, README
 
 from bluer_geo import NAME, VERSION, ICON, REPO_NAME
@@ -8,11 +9,14 @@ from bluer_geo.help.functions import help_functions
 from bluer_geo.watch.targets.target_list import TargetList
 
 
-def build() -> bool:
-    target_list = TargetList(download=True)
+def build(args) -> bool:
+    target_list = TargetList(
+        download=bool(BLUER_AI_CLOUD_IS_ACCESSIBLE),
+    )
 
     return all(
         README.build(
+            args,
             items=items,
             cols=cols,
             path=os.path.join(

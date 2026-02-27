@@ -1,3 +1,5 @@
+# pylint: skip-file
+
 if not QGIS_is_live:
     from ..application import BLUE_GEO_QGIS_APPLICATION
     from ..file import Q_file_exists

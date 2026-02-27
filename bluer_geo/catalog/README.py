@@ -2,15 +2,18 @@ import os
 
 from bluer_objects import file, README
 from bluer_options.help.functions import get_help
+from bluer_options.env import BLUER_AI_WEB_IS_ACCESSIBLE
 
+from bluer_geo import env
 from bluer_geo import NAME, VERSION, ICON, REPO_NAME
 from bluer_geo.catalog import get_catalog
 from bluer_geo.help.functions import help_functions
 
 
-def build() -> bool:
+def build(args) -> bool:
     return all(
         README.build(
+            args=args,
             items=[],
             cols=3,
             path=os.path.join(file.path(__file__), suffix),
@@ -27,11 +30,23 @@ def build() -> bool:
         )
         for suffix, macros, in [
             (catalog, {"--urls--": get_catalog(catalog).urls_as_str()})
-            for catalog in [
-                "copernicus",
-                "maxar_open_data",
-                "firms",
-                "ukraine_timemap",
-            ]
+            for catalog in (
+                (
+                    [
+                        "copernicus",
+                        "firms",
+                    ]
+                    + (
+                        [
+                            "maxar_open_data",
+                            "ukraine_timemap",
+                        ]
+                        if BLUER_AI_WEB_IS_ACCESSIBLE
+                        else []
+                    )
+                )
+                if env.BLUER_GEO_DISABLE_ALL_CATALOGS == 0
+                else []
+            )
         ]
     )

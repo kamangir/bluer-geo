@@ -72,13 +72,14 @@ items = README.Items(
 )
 
 
-def build() -> bool:
+def build(args) -> bool:
     return (
-        build_catalog()
-        and build_targets()
-        and build_objects()
+        build_catalog(args)
+        and build_targets(args)
+        and build_objects(args)
         and all(
             README.build(
+                args=args,
                 items=items,
                 cols=cols,
                 path=os.path.join(file.path(__file__), suffix),

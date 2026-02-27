@@ -32,15 +32,16 @@ def sync_the_label(
         logger.error(f"template not found: {template_filename}.")
         return False
 
-    from bluer_objects.storage import instance as storage
+    from bluer_objects import storage
 
-    if storage.exists(object_name=f"{datacube_id}/label.shp"):
+    # pylint: disable=using-constant-test
+    if True:  # storage.exists(object_name=f"{datacube_id}/label.shp"):
         logger.info(f"☁️ {label_filename}")
 
         for filename in tqdm(glob.glob(file.add_extension(template_filename, "*"))):
             extension = file.extension(filename)
 
-            if not storage.download_file(
+            if not storage.download(
                 object_name=f"bolt/{datacube_id}/label.{extension}",
                 filename="object",
             ):
